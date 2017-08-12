@@ -1,2 +1,2 @@
-# Jetpack-Bear
+# Jetpack Bear
 #bearjam

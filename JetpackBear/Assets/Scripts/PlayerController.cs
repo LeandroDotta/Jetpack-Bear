@@ -45,5 +45,13 @@ public class PlayerController : MonoBehaviour {
 		transform.localScale = scale;
 
 		transform.rotation = Quaternion.Euler(0, 0, -(rb2d.velocity.x*3));
+
+		if(Input.GetButtonDown("Cancel"))
+		{
+			if(StageManager.Instance.IsPaused)
+				StageManager.Instance.Resume();
+			else
+				StageManager.Instance.Pause();
+		}
 	}
 }

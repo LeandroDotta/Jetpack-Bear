@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hazard
+  - Pickup
   layers:
   - Default
   - TransparentFX
@@ -38,9 +40,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3975700097
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Bear
     uniqueID: 1662593661
+    locked: 0
+  - name: Foreground
+    uniqueID: 3031905049
+    locked: 0
+  - name: UI
+    uniqueID: 536503857
     locked: 0

@@ -25,4 +25,14 @@ public class GameManager : MonoBehaviour
 	{
 		Cursor.visible = false;
 	}
+
+	public void SaveHiveCount(string stageName, int count)
+	{
+		PlayerPrefs.SetInt(string.Format("Hives_{0}", stageName), count);
+	}
+
+	public int GetSavedHiveCount(string stageName)
+	{
+		return PlayerPrefs.GetInt(string.Format("Hives_{0}", stageName), 0);
+	}
 }

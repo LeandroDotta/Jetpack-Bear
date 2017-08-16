@@ -205,6 +205,46 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224325266000848174, guid: 9c900a6213a96004dbf92353b141e113,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224325266000848174, guid: 9c900a6213a96004dbf92353b141e113,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224325266000848174, guid: 9c900a6213a96004dbf92353b141e113,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 128.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 224325266000848174, guid: 9c900a6213a96004dbf92353b141e113,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224411926726184022, guid: 9c900a6213a96004dbf92353b141e113,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224411926726184022, guid: 9c900a6213a96004dbf92353b141e113,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224411926726184022, guid: 9c900a6213a96004dbf92353b141e113,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 258.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 224411926726184022, guid: 9c900a6213a96004dbf92353b141e113,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c900a6213a96004dbf92353b141e113, type: 2}
   m_IsPrefabParent: 0
@@ -595,7 +635,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Main
+          m_StringArgument: LevelSelection
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

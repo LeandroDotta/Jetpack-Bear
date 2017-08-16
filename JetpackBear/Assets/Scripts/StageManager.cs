@@ -11,6 +11,13 @@ public class StageManager : MonoBehaviour {
 
 	public static StageManager Instance { get; set; }
 	public int HiveCount { get; set; }
+	public string StageName 
+	{ 
+		get
+		{
+			return SceneManager.GetActiveScene().name;
+		} 
+	}
 
 	public bool IsPaused 
 	{ 
@@ -71,6 +78,10 @@ public class StageManager : MonoBehaviour {
 	{
 		bear.enabled = false;
 		GameManager.Instance.ShowCursor();
+
+		int savedHiveCount = GameManager.Instance.GetSavedHiveCount(StageName);
+		if(HiveCount > savedHiveCount)
+			GameManager.Instance.SaveHiveCount(StageName, HiveCount);
 
 		if(stageUI != null)
 			stageUI.ShowWinScreen();

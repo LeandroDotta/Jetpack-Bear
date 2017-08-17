@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
 
 	private bool holdFly;
 	private float axisHorizontal;
+	private float accelerationX;
 
 	private Rigidbody2D rb2d;
 
@@ -30,12 +31,17 @@ public class PlayerController : MonoBehaviour {
 		if(holdFly)
 			rb2d.AddForce(Vector2.up * flyForce);
 
-		rb2d.AddForce(new Vector2(axisHorizontal * moveForce, 0));	
+		if(axisHorizontal != 0);
+			rb2d.AddForce(new Vector2(axisHorizontal * moveForce, 0));	
+
+		if(accelerationX != 0);
+			rb2d.AddForce(new Vector2(accelerationX * (moveForce*2), 0));	
 	}
 
 	void Update () {
-		holdFly = Input.GetButton("Fly") || Input.GetAxisRaw("Vertical") == 1;
+		holdFly = Input.GetButton("Fly") || Input.GetAxisRaw("Vertical") == 1 || Input.GetMouseButton(0);
 		axisHorizontal = Input.GetAxis("Horizontal");
+		accelerationX = Input.acceleration.x;
 
 		burstAnim1.SetBool("on", holdFly);
 		burstAnim2.SetBool("on", holdFly);

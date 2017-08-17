@@ -18,6 +18,7 @@ x64/
 build/
 [Bb]in/
 [Oo]bj/
+[Bb]uilds/
 
 # Visual Studio 2015 cache directory
 /.vs/

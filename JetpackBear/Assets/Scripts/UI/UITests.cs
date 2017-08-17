@@ -9,7 +9,10 @@ public class UITests : MonoBehaviour {
 	public Text velocityText;
 	public Rigidbody2D theRigidbody;
 
+	public Text accelerometer;
+
 	void Update () {
 		velocityText.text = "Velocity: " + theRigidbody.velocity;
+		accelerometer.text = "Accelerometer: " + Input.acceleration;
 	}
 }

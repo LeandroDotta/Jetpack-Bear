@@ -15,10 +15,14 @@ public class PlayerController : MonoBehaviour {
 	private Animator burstAnim1;
 	private Animator burstAnim2;
 
+	private AudioSource audio;
+
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
 		burstAnim1 = transform.Find("JetpackBurst1").GetComponent<Animator>();
 		burstAnim2 = transform.Find("JetpackBurst2").GetComponent<Animator>();
+
+		audio = GetComponent<AudioSource>();
 	}
 
 	void FixedUpdate()
@@ -46,12 +50,45 @@ public class PlayerController : MonoBehaviour {
 
 		transform.rotation = Quaternion.Euler(0, 0, -(rb2d.velocity.x*3));
 
+		if(holdFly && !audio.isPlaying)
+		{
+			audio.Play();
+		}
+		else if(!holdFly && audio.isPlaying)
+		{
+			audio.Stop();
+		}
+
 		if(Input.GetButtonDown("Cancel"))
 		{
 			if(StageManager.Instance.IsPaused)
 				StageManager.Instance.Resume();
 			else
 				StageManager.Instance.Pause();
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(!enabled) return;
+			
+
+		if(other.CompareTag("Hazard"))
+		{
+			SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
+			StageManager.Instance.Lose();
+		}
+
+		if(other.CompareTag("Pickup"))
+		{
+			SoundEffects.Instance.Play(SoundEffects.Instance.sfxPickup);
+			StageManager.Instance.HiveCount++;
+			Destroy(other.gameObject);
+		}
+
+		if(other.CompareTag("Finish"))
+		{
+			StageManager.Instance.Win();
 		}
 	}
 }

@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 114743770189332140}
   - component: {fileID: 114176012712462678}
   - component: {fileID: 114497683853853236}
+  - component: {fileID: 114517670971415114}
   m_Layer: 5
   m_Name: StageButton
   m_TagString: Untagged
@@ -193,6 +194,17 @@ MonoBehaviour:
   hive2: {fileID: 114343210567609930}
   hive3: {fileID: 114987926003802250}
   stage: 
+--- !u!114 &114517670971415114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1753973115010914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ea7b99cb58b0246a6bcef19be2ef11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114588820988116320
 MonoBehaviour:
   m_ObjectHideFlags: 1

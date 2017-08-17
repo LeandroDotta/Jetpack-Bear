@@ -54,6 +54,8 @@ public class StageManager : MonoBehaviour {
 
 		if(stageUI != null)
 			stageUI.ShowPauseScreen();
+
+		SoundEffects.Instance.Play(SoundEffects.Instance.sfxPause);
 	}
 
 	public void Resume()
@@ -63,6 +65,8 @@ public class StageManager : MonoBehaviour {
 
 		if(stageUI != null)
 			stageUI.HideMessagePanel();
+
+		SoundEffects.Instance.Play(SoundEffects.Instance.sfxUISlide);
 	}
 
 	public void Lose()
@@ -72,6 +76,8 @@ public class StageManager : MonoBehaviour {
 
 		if(stageUI != null)
 			stageUI.ShowLoseScreen();
+
+		SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
 	}
 
 	public void Win()
@@ -85,6 +91,8 @@ public class StageManager : MonoBehaviour {
 
 		if(stageUI != null)
 			stageUI.ShowWinScreen();
+			
+		SoundEffects.Instance.Play(SoundEffects.Instance.sfxWin);
 	}
 
 	public void NextStage()

@@ -2740,6 +2740,11 @@ Prefab:
       propertyPath: bear
       value: 
       objectReference: {fileID: 66611335}
+    - target: {fileID: 114762281766234420, guid: c6484e2603ae15a44b15a9dfd20f26f7,
+        type: 2}
+      propertyPath: nextStage
+      value: Stage 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6484e2603ae15a44b15a9dfd20f26f7, type: 2}
   m_IsPrefabParent: 0

@@ -5,6 +5,17 @@ using UnityEngine;
 public class GameManager : MonoBehaviour 
 {
 	public static GameManager Instance { get; private set; }
+	public int StageProgress 
+	{ 
+		get
+		{
+			return PlayerPrefs.GetInt("StageProgress", 0);
+		}
+	 	set
+		{
+			PlayerPrefs.SetInt("StageProgress", value);
+		} 
+	}
 
 	void Awake()
 	{

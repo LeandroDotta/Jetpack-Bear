@@ -12,9 +12,25 @@ public class StageButton : MonoBehaviour {
 	public Image hive3;
 
 	public string stage;
+	
+	public Sprite disabledSprite;
 
-	void Start () 
+	private Button button;
+	private Image padlock;
+	private Text numberText;
+
+	void Start() 
 	{
+		button = GetComponent<Button>();
+		padlock = transform.Find("Padlock").GetComponent<Image>();
+		numberText = transform.Find("Number").GetComponent<Text>();
+
+		if(!button.IsInteractable()){
+			button.image.overrideSprite = disabledSprite;
+			padlock.gameObject.SetActive(true);
+			numberText.gameObject.SetActive(false);
+		}
+
 		int hiveCount = GameManager.Instance.GetSavedHiveCount(stage);
 
 		if(hiveCount >= 1) hive1.color = Color.white;

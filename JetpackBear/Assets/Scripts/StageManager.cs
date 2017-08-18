@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class StageManager : MonoBehaviour {
 
+	public int stageNumber;
 	public string nextStage;
+	public bool isFinal;
+
 	public PlayerController bear;
 	public InGameUI stageUI;
 
@@ -88,6 +91,9 @@ public class StageManager : MonoBehaviour {
 		int savedHiveCount = GameManager.Instance.GetSavedHiveCount(StageName);
 		if(HiveCount > savedHiveCount)
 			GameManager.Instance.SaveHiveCount(StageName, HiveCount);
+
+		if(stageNumber > GameManager.Instance.StageProgress)
+			GameManager.Instance.StageProgress = stageNumber;
 
 		if(stageUI != null)
 			stageUI.ShowWinScreen();

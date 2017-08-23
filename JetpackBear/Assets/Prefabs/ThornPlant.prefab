@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61049485184658316}
   m_Layer: 0
   m_Name: ThornPlant
-  m_TagString: Hazard
+  m_TagString: Hazard_Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

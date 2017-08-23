@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Hazard
   - Pickup
+  - Hazard_Bee
+  - Hazard_Spike
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ground
   - 
   - 
   - 

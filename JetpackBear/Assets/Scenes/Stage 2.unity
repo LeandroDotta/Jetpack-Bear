@@ -832,6 +832,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &567501993
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1074547924}
+    m_Modifications:
+    - target: {fileID: 4214828364419518, guid: 20e234bf639088347b7aa618ef87a329, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 15.432
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214828364419518, guid: 20e234bf639088347b7aa618ef87a329, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214828364419518, guid: 20e234bf639088347b7aa618ef87a329, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214828364419518, guid: 20e234bf639088347b7aa618ef87a329, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214828364419518, guid: 20e234bf639088347b7aa618ef87a329, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214828364419518, guid: 20e234bf639088347b7aa618ef87a329, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214828364419518, guid: 20e234bf639088347b7aa618ef87a329, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214828364419518, guid: 20e234bf639088347b7aa618ef87a329, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 212035143518410796, guid: 20e234bf639088347b7aa618ef87a329,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 19.51091
+      objectReference: {fileID: 0}
+    - target: {fileID: 212035143518410796, guid: 20e234bf639088347b7aa618ef87a329,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 52.96767
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 20e234bf639088347b7aa618ef87a329, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &567501994 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4214828364419518, guid: 20e234bf639088347b7aa618ef87a329,
+    type: 2}
+  m_PrefabInternal: {fileID: 567501993}
 --- !u!1001 &580067915
 Prefab:
   m_ObjectHideFlags: 0
@@ -1992,6 +2049,7 @@ Transform:
   - {fileID: 1931839984}
   - {fileID: 1337448466}
   - {fileID: 525559840}
+  - {fileID: 567501994}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

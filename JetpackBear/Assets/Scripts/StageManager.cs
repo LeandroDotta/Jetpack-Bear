@@ -52,7 +52,8 @@ public class StageManager : MonoBehaviour {
 
 	void Update()
 	{
-		
+		if(Input.GetButtonDown("Restart"))
+			RestartStage();
 	}
 
 	public void Pause()

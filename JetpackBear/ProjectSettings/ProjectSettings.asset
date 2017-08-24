@@ -122,7 +122,7 @@ PlayerSettings:
     16:10: 0
     16:9: 1
     Others: 0
-  bundleVersion: 0.2.0
+  bundleVersion: 0.3.0
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -145,7 +145,7 @@ PlayerSettings:
     Android: com.LeandroDotta.JetpackBear
     Standalone: com.LeandroDotta.JetpackBear
   buildNumber: {}
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 2
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1

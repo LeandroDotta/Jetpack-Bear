@@ -30,8 +30,8 @@ public class PlayerController : MonoBehaviour {
 	public PlayableDirector AnimationWin { get; private set; }
 	public Animator Anim { get; private set; }
 
-	void Start () {
-		
+	void Start () 
+	{		
 		rb2d = GetComponent<Rigidbody2D>();
 		coll = GetComponent<Collider2D>();
 		Anim = GetComponent<Animator>();
@@ -109,10 +109,13 @@ public class PlayerController : MonoBehaviour {
 
 	void OnDisable()
 	{
-		TurnJetpack(false);
+		if(gameObject.activeSelf)
+		{
+			TurnJetpack(false);
 
-		Anim.SetBool("none", true);
-		audio.Stop();
+			Anim.SetBool("none", true);
+			audio.Stop();
+		}
 	}
 
 	void OnDrawGizmos()
@@ -183,6 +186,7 @@ public class PlayerController : MonoBehaviour {
 
 	private void TurnJetpack(bool isOn)
 	{
+		
 		burstAnim1.SetBool("on", isOn);
 		burstAnim2.SetBool("on", isOn);
 

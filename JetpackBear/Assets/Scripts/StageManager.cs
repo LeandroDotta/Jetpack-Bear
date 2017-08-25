@@ -9,7 +9,7 @@ public class StageManager : MonoBehaviour {
 	public string nextStage;
 	public bool isFinal;
 
-	public PlayerController bear;
+	private PlayerController bear;
 	public InGameUI stageUI;
 
 	public static StageManager Instance { get; set; }
@@ -46,6 +46,9 @@ public class StageManager : MonoBehaviour {
 	{
 		IsPaused = false;
 		GameManager.Instance.HideCursor();
+
+		bear = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<PlayerController>();
+		stageUI = GameObject.FindObjectOfType<InGameUI>();
 
 		HiveCount = 0;
 	}

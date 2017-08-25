@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 224535782857531410}
   - component: {fileID: 222726908407917252}
   - component: {fileID: 114105246987129762}
+  - component: {fileID: 114799835670538314}
   m_Layer: 5
   m_Name: PanelAudioSettings
   m_TagString: Untagged
@@ -240,7 +241,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114799835670538314}
         m_MethodName: ToggleMusic
         m_Mode: 0
         m_Arguments:
@@ -276,6 +277,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ea7b99cb58b0246a6bcef19be2ef11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114799835670538314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1760988596143694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d663009d6f75724ab0d4a5060d24c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterMixer: {fileID: 24100000, guid: 12c467f310cdf8841a1f70ace3732ca3, type: 2}
+  btnSfx: {fileID: 114928066258803750}
+  btnMusic: {fileID: 114449940674427072}
 --- !u!114 &114928066258803750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -318,7 +333,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114799835670538314}
         m_MethodName: ToggleSound
         m_Mode: 0
         m_Arguments:

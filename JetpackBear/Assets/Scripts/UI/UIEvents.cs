@@ -9,4 +9,28 @@ public class UIEvents : MonoBehaviour
 	{
 		SceneManager.LoadScene(name);
 	}
+
+	public void Pause()
+	{
+		if(StageManager.Instance != null)
+			StageManager.Instance.Pause();
+	}
+
+	public void Resume()
+	{
+		if(StageManager.Instance != null)
+			StageManager.Instance.Resume();
+	}
+
+	public void RestartStage()
+	{
+		if(StageManager.Instance != null)
+			StageManager.Instance.RestartStage();
+	}
+
+	public void NextStage()
+	{
+		if(StageManager.Instance != null)
+			StageManager.Instance.NextStage();
+	}
 }

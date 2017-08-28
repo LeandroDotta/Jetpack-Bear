@@ -35,7 +35,7 @@ public class Parallax : MonoBehaviour {
 	void Update () 
 	{
 		Vector2 direction = new Vector2(cam.position.x - previousCamPos.x, 0);
-		transform.Translate(direction * -speed * Time.deltaTime);
+		transform.Translate(direction * speed * Time.deltaTime);
 
 
 		// if(direction.x > 0)

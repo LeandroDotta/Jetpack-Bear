@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class StageButton : MonoBehaviour {
+public class StageButton : MonoBehaviour, ISelectHandler, IPointerEnterHandler {
 
 	[Header("Hives")]
 	public Image hive1;
@@ -14,10 +15,12 @@ public class StageButton : MonoBehaviour {
 	public string stage;
 	
 	public Sprite disabledSprite;
+	public StagePanel stagePanel;
 
 	private Button button;
 	private Image padlock;
 	private Text numberText;
+
 
 	void Start() 
 	{
@@ -42,4 +45,16 @@ public class StageButton : MonoBehaviour {
 	{
 		SceneManager.LoadScene(stage);
 	}
+
+    public void OnSelect(BaseEventData eventData)
+    {
+        if(stagePanel != null)
+			stagePanel.Show(stage, GameManager.Instance.GetSavedHiveCount(stage));
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if(stagePanel != null)
+			stagePanel.Show(stage, GameManager.Instance.GetSavedHiveCount(stage));
+    }
 }

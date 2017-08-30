@@ -10,7 +10,7 @@ public class StageManager : MonoBehaviour {
 	public bool isFinal;
 
 	private PlayerController bear;
-	public InGameUI stageUI;
+	public UICollectedHives collectedHives;
 
 	public static StageManager Instance { get; set; }
 	public int HiveCount { get; set; }
@@ -34,6 +34,19 @@ public class StageManager : MonoBehaviour {
 		}
 	}
 
+	// Events
+	public delegate void PauseAction();
+	public event PauseAction OnPause;
+
+	public delegate void ResumeAction();
+	public event ResumeAction OnResume;
+
+	public delegate void LoseAction();
+	public event LoseAction OnLose;
+
+	public delegate void WinAction();
+	public event WinAction OnWin;
+
 	void Awake()
 	{
 		if (Instance == null)
@@ -48,7 +61,6 @@ public class StageManager : MonoBehaviour {
 		GameManager.Instance.HideCursor();
 
 		bear = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<PlayerController>();
-		stageUI = GameObject.FindObjectOfType<InGameUI>();
 
 		HiveCount = 0;
 	}
@@ -64,8 +76,12 @@ public class StageManager : MonoBehaviour {
 		IsPaused = true;
 		GameManager.Instance.ShowCursor();
 
-		if(stageUI != null)
-			stageUI.ShowPauseScreen();
+		if(OnPause != null)
+			OnPause();
+	
+
+		if(collectedHives != null)
+			collectedHives.Show();
 
 		SoundEffects.Instance.Play(SoundEffects.Instance.sfxPause);
 	}
@@ -75,10 +91,29 @@ public class StageManager : MonoBehaviour {
 		IsPaused = false;
 		GameManager.Instance.HideCursor();
 
-		if(stageUI != null)
-			stageUI.HideMessagePanel();
+		if(OnResume != null)
+			OnResume();
+
+		if(collectedHives != null)
+			collectedHives.HideAfter(3f);
 
 		SoundEffects.Instance.Play(SoundEffects.Instance.sfxUISlide);
+	}
+
+	void OnDestroy()
+	{
+		IsPaused = false;
+	}
+
+	public void AddHive()
+	{
+		HiveCount++;
+		
+		if(collectedHives != null)
+		{
+			collectedHives.SetHives(HiveCount);
+			collectedHives.ShowForSeconds(3f);
+		}
 	}
 
 	public IEnumerator LoseCoroutine()
@@ -87,8 +122,11 @@ public class StageManager : MonoBehaviour {
 
 		GameManager.Instance.ShowCursor();
 
-		if(stageUI != null)
-			stageUI.ShowLoseScreen();
+		if(OnLose != null)
+			OnLose();
+
+		if(collectedHives != null)
+			collectedHives.Show();
 	}
 
 	public IEnumerator WinCoroutine()
@@ -106,8 +144,8 @@ public class StageManager : MonoBehaviour {
 
 		GameManager.Instance.ShowCursor();
 
-		if(stageUI != null)
-			stageUI.ShowWinScreen();
+		if(OnWin != null)
+			OnWin();
 	}
 
 	public void NextStage()

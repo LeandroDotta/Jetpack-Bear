@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Playables;
 
 public class PlayerController : MonoBehaviour {
-
 	public float flyForce;
 	public float moveForce;
 
@@ -23,7 +22,7 @@ public class PlayerController : MonoBehaviour {
 	private Animator burstAnim2;
 	private ParticleSystem[] smokes;
 
-	private AudioSource audio;
+	private AudioSource audioSource;
 	
 	public PlayableDirector AnimationLoseBee { get; private set; }
 	public PlayableDirector AnimationLoseExplosion { get; private set; }
@@ -35,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 		rb2d = GetComponent<Rigidbody2D>();
 		coll = GetComponent<Collider2D>();
 		Anim = GetComponent<Animator>();
-		audio = GetComponent<AudioSource>();
+		audioSource = GetComponent<AudioSource>();
 
 		AnimationLoseBee = transform.Find("LoseAnimation_Bee").GetComponent<PlayableDirector>();
 		AnimationLoseExplosion = transform.Find("LoseAnimation_Explosion").GetComponent<PlayableDirector>();		
@@ -82,7 +81,7 @@ public class PlayerController : MonoBehaviour {
 		transform.rotation = Quaternion.Euler(0, 0, -(rb2d.velocity.x*3));
 
 
-		audio.mute = !holdFly;
+		audioSource.mute = !holdFly || !enabled;
 		// if(holdFly && !audio.isPlaying)
 		// {
 		// 	audio.Play();
@@ -114,7 +113,7 @@ public class PlayerController : MonoBehaviour {
 			TurnJetpack(false);
 
 			Anim.SetBool("none", true);
-			audio.Stop();
+			audioSource.Stop();
 		}
 	}
 
@@ -167,7 +166,8 @@ public class PlayerController : MonoBehaviour {
 		if(other.CompareTag("Pickup"))
 		{
 			SoundEffects.Instance.Play(SoundEffects.Instance.sfxPickup);
-			StageManager.Instance.HiveCount++;
+			StageManager.Instance.AddHive();
+
 			Destroy(other.gameObject);
 		}
 

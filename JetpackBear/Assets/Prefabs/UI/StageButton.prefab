@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 114497683853853236}
   - component: {fileID: 114517670971415114}
   - component: {fileID: 225028874119344900}
+  - component: {fileID: 95235872506223654}
   m_Layer: 5
   m_Name: StageButton
   m_TagString: Untagged
@@ -118,6 +119,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &95235872506223654
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1753973115010914}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: da4d96b4550fcb240a91f1989ee87ee8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114176012712462678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,7 +153,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.8896551, b: 0, a: 1}
@@ -213,6 +231,7 @@ MonoBehaviour:
   hive3: {fileID: 114987926003802250}
   stage: Stage 1
   disabledSprite: {fileID: 21300000, guid: 4d7787402f57ec04ca05f8b0fc2985f0, type: 3}
+  stagePanel: {fileID: 0}
 --- !u!114 &114517670971415114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -244,8 +263,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9dff7b4973dafc74982aaa72c1f4e142, type: 3}
-    m_FontSize: 60
+    m_Font: {fileID: 12800000, guid: 049aed28c4525734d89f744e21e23f5b, type: 3}
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -523,11 +542,11 @@ RectTransform:
   m_Father: {fileID: 224650093430251172}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 5, y: -8}
-  m_SizeDelta: {x: 110, y: 110}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 4.5, y: 4.5}
+  m_SizeDelta: {x: -9, y: -9}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &225028874119344900
 CanvasGroup:
   m_ObjectHideFlags: 1

@@ -294,6 +294,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114762281766234420, guid: c6484e2603ae15a44b15a9dfd20f26f7,
+        type: 2}
+      propertyPath: stageUI
+      value: 
+      objectReference: {fileID: 1800203492}
+    - target: {fileID: 114762281766234420, guid: c6484e2603ae15a44b15a9dfd20f26f7,
+        type: 2}
+      propertyPath: collectedHives
+      value: 
+      objectReference: {fileID: 1800203491}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6484e2603ae15a44b15a9dfd20f26f7, type: 2}
   m_IsPrefabParent: 0
@@ -6924,6 +6934,18 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224309202187222700, guid: 55ff752a4f5c944428a6c79397130264,
     type: 2}
   m_PrefabInternal: {fileID: 1800203489}
+--- !u!114 &1800203491 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114962763801254806, guid: 55ff752a4f5c944428a6c79397130264,
+    type: 2}
+  m_PrefabInternal: {fileID: 1800203489}
+  m_Script: {fileID: 11500000, guid: 907824a4f1bbcb34fb24dacddb42ae91, type: 3}
+--- !u!114 &1800203492 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114176596720878428, guid: 55ff752a4f5c944428a6c79397130264,
+    type: 2}
+  m_PrefabInternal: {fileID: 1800203489}
+  m_Script: {fileID: 11500000, guid: 5c71fa3cc52724c4a8d28e27f3de6c90, type: 3}
 --- !u!1001 &1827148254
 Prefab:
   m_ObjectHideFlags: 0

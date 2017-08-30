@@ -33,4 +33,14 @@ public class UIEvents : MonoBehaviour
 		if(StageManager.Instance != null)
 			StageManager.Instance.NextStage();
 	}
+
+	public void ExitGame()
+	{
+		Application.Quit();
+	}
+
+	public void ResetProgress()
+	{
+		GameManager.Instance.ResetProgress();
+	}
 }

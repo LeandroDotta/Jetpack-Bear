@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 83ab1cd0ad2bc7c469b24b9234d7ae8c
-timeCreated: 1503454318
+timeCreated: 1503884972
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -13,6 +13,12 @@ TextureImporter:
     21300012: BearLeg_Lose_Bee_1
     21300014: BearLeg_Lose_Bee_2
     21300016: BearLeg_Lose_Bee_3
+    21300018: BearLeg_Walk_01
+    21300020: BearLeg_Walk_02
+    21300022: BearLeg_Walk_03
+    21300024: BearLeg_Walk_04
+    21300026: BearLeg_Walk_05
+    21300028: BearLeg_Walk_06
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -112,7 +118,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 96
         width: 64
         height: 32
       alignment: 0
@@ -126,7 +132,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 96
         width: 64
         height: 32
       alignment: 0
@@ -140,7 +146,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 64
+        y: 96
         width: 64
         height: 32
       alignment: 0
@@ -154,7 +160,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 64
         width: 64
         height: 32
       alignment: 0
@@ -168,7 +174,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
+        y: 64
         width: 64
         height: 32
       alignment: 0
@@ -182,6 +188,62 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 32
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BearLeg_Lose_Bee_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BearLeg_Lose_Bee_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BearLeg_Lose_Bee_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BearLeg_Walk_01
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 64
         height: 32
@@ -192,7 +254,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BearLeg_Lose_Bee_1
+      name: BearLeg_Walk_02
       rect:
         serializedVersion: 2
         x: 64
@@ -206,7 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BearLeg_Lose_Bee_2
+      name: BearLeg_Walk_03
       rect:
         serializedVersion: 2
         x: 128
@@ -220,10 +282,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BearLeg_Lose_Bee_3
+      name: BearLeg_Walk_04
       rect:
         serializedVersion: 2
         x: 192
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BearLeg_Walk_05
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BearLeg_Walk_06
+      rect:
+        serializedVersion: 2
+        x: 320
         y: 0
         width: 64
         height: 32

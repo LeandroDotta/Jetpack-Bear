@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour {
 	public float speed;
-
-	private float initPos;
 	private Transform cam;
 	private Vector2 previousCamPos;
 	private SpriteRenderer spriteRenderer;
@@ -20,7 +18,6 @@ public class Parallax : MonoBehaviour {
 	{
 		spriteRenderer = GetComponent<SpriteRenderer>();
 
-		initPos = transform.localPosition.x;
 		cam = Camera.main.transform;
 		previousCamPos = cam.position;
 

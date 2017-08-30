@@ -4,21 +4,19 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ButtonSound : MonoBehaviour, ISelectHandler, IPointerClickHandler
+public class ButtonSound : MonoBehaviour, ISelectHandler, IPointerClickHandler, UnityEngine.EventSystems.ISubmitHandler
 {
-	private Button button;
-
-	void Start()
-	{
-		button = GetComponent<Button>();
-	}
-
     public void OnSelect(BaseEventData eventData)
     {
         SoundEffects.Instance.Play(SoundEffects.Instance.sfxUINavigation);
     }
 
     public void OnPointerClick(PointerEventData eventData)
+    {
+        SoundEffects.Instance.Play(SoundEffects.Instance.sfxUIActivation);
+    }
+
+    public void OnSubmit(BaseEventData eventData)
     {
         SoundEffects.Instance.Play(SoundEffects.Instance.sfxUIActivation);
     }

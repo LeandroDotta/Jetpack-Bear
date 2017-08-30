@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageNumber: 1
-  nextStage: 
+  nextStage: Stage 2
   isFinal: 0
   stageUI: {fileID: 0}
+  collectedHives: {fileID: 0}

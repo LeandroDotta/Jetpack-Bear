@@ -46,4 +46,15 @@ public class GameManager : MonoBehaviour
 	{
 		return PlayerPrefs.GetInt(string.Format("Hives_{0}", stageName), 0);
 	}
+
+	public void ResetProgress()
+	{
+		float sfxVol = AudioControl.SfxVolume;
+		float musicVol = AudioControl.MusicVolume;
+		
+		PlayerPrefs.DeleteAll();
+
+		PlayerPrefs.SetFloat(AudioControl.KEY_SFX, sfxVol);
+		PlayerPrefs.SetFloat(AudioControl.KEY_MUSIC, musicVol);
+	}
 }

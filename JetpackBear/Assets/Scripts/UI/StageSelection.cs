@@ -5,20 +5,17 @@ using UnityEngine.UI;
 
 public class StageSelection : MonoBehaviour 
 {
-	public Button[] stageButtons;
+	public Stage[] defaultStages;
 
 	void Awake()
 	{
-		for(int i = 1; i < stageButtons.Length; ++i)
+		foreach(Stage stage in defaultStages)
 		{
-			Button btn = stageButtons[i];
-			int progress = GameManager.Instance.StageProgress;
-
-			if(progress >= i)
-				btn.interactable = true;
-			else
-				btn.interactable = false;
-				
+			if(!DataManager.HasStageInfo(stage))
+			{
+				StageInfo info = new StageInfo(){ unlocked = true };
+				DataManager.SaveStageInfo(stage.key, info);
+			}
 		}
 	}
 }

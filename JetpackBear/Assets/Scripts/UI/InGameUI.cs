@@ -31,7 +31,7 @@ public class InGameUI : MonoBehaviour
 		StageManager.Instance.OnLose += ShowLoseScreen;
 		StageManager.Instance.OnWin += ShowWinScreen;
 
-		stageName.text = StageManager.Instance.StageName;
+		stageName.text = StageManager.Instance.stage.displayName;
 	}
 
 	public void ShowPauseScreen()
@@ -52,7 +52,7 @@ public class InGameUI : MonoBehaviour
 
 	public void ShowWinScreen()
 	{
-		int hiveCount = StageManager.Instance.HiveCount;
+		int hiveCount = StageManager.Instance.CollectedHiveCount;
 		hive1.color = hiveCount >= 1 ? (Color32)Color.white : transparentBlack;
 		hive2.color = hiveCount >= 2 ? (Color32)Color.white : transparentBlack;
 		hive3.color = hiveCount == 3 ? (Color32)Color.white : transparentBlack;

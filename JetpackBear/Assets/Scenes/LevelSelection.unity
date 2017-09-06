@@ -307,7 +307,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -378,16 +378,6 @@ Prefab:
       propertyPath: m_Name
       value: StageButton10
       objectReference: {fileID: 0}
-    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Text
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnRight
@@ -401,13 +391,30 @@ Prefab:
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stage
-      value: Stage 10
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: a5fbfa16a38ae604094136dfc9ca9bfa,
+        type: 2}
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stagePanel
       value: 
       objectReference: {fileID: 851332136}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stageInfo.stage
+      value: 
+      objectReference: {fileID: 11400000, guid: a5fbfa16a38ae604094136dfc9ca9bfa,
+        type: 2}
+    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0
@@ -492,6 +499,156 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 148792653}
+--- !u!1001 &186830988
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 415375750}
+    m_Modifications:
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -188.99998
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.1675
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.6966666
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.1675
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.6966666
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stagePanel
+      value: 
+      objectReference: {fileID: 851332136}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 388628784}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 388628784}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Navigation.m_SelectOnRight
+      value: 
+      objectReference: {fileID: 248675679}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.9998999
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.9998999
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.9998999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753973115010914, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
+      propertyPath: m_Name
+      value: StageButton_Prologue
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stage
+      value: 
+      objectReference: {fileID: 11400000, guid: e37abdbb3e4b579419615c894a2c6a4c,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!114 &248675679 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
@@ -529,7 +686,7 @@ RectTransform:
   m_Children:
   - {fileID: 2072958992}
   m_Father: {fileID: 415375750}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -721,6 +878,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1184587236}
+  - {fileID: 437168742}
   - {fileID: 673762928}
   - {fileID: 1290430948}
   - {fileID: 774078718}
@@ -763,17 +921,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639721585963a034fbcc2f45541fa2e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageButtons:
-  - {fileID: 673762929}
-  - {fileID: 248675679}
-  - {fileID: 3261356}
-  - {fileID: 1842477453}
-  - {fileID: 896996524}
-  - {fileID: 1945313450}
-  - {fileID: 1768289994}
-  - {fileID: 713817445}
-  - {fileID: 1828992828}
-  - {fileID: 1543127097}
+  defaultStages:
+  - {fileID: 11400000, guid: e37abdbb3e4b579419615c894a2c6a4c, type: 2}
+  - {fileID: 11400000, guid: 336d3098eceed3146951edbb619b1322, type: 2}
+--- !u!224 &437168742 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+    type: 2}
+  m_PrefabInternal: {fileID: 186830988}
 --- !u!1001 &509591955
 Prefab:
   m_ObjectHideFlags: 0
@@ -819,7 +974,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -878,11 +1033,6 @@ Prefab:
       objectReference: {fileID: 851332136}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
-      propertyPath: m_Navigation.m_SelectOnRight
-      value: 
-      objectReference: {fileID: 248675679}
-    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
       propertyPath: m_Navigation.m_SelectOnUp
       value: 
       objectReference: {fileID: 388628784}
@@ -891,6 +1041,16 @@ Prefab:
       propertyPath: m_Navigation.m_SelectOnLeft
       value: 
       objectReference: {fileID: 388628784}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Navigation.m_SelectOnRight
+      value: 
+      objectReference: {fileID: 248675679}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0
@@ -1065,7 +1225,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -1136,16 +1296,6 @@ Prefab:
       propertyPath: m_Name
       value: StageButton9
       objectReference: {fileID: 0}
-    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Text
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnRight
@@ -1164,13 +1314,30 @@ Prefab:
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stage
-      value: Stage 9
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 09a8fd461abdb114887b0f461e045339,
+        type: 2}
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stagePanel
       value: 
       objectReference: {fileID: 851332136}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stageInfo.stage
+      value: 
+      objectReference: {fileID: 11400000, guid: 09a8fd461abdb114887b0f461e045339,
+        type: 2}
+    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0
@@ -1230,7 +1397,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -1301,11 +1468,6 @@ Prefab:
       propertyPath: m_Name
       value: StageButton3
       objectReference: {fileID: 0}
-    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Text
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnLeft
@@ -1324,8 +1486,9 @@ Prefab:
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stage
-      value: Stage 3
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: e25392994f1ab984889977ccabd09994,
+        type: 2}
     - target: {fileID: 1174291947854058, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
       propertyPath: m_Name
       value: Number
@@ -1335,6 +1498,17 @@ Prefab:
       propertyPath: stagePanel
       value: 
       objectReference: {fileID: 851332136}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stageInfo.stage
+      value: 
+      objectReference: {fileID: 11400000, guid: e25392994f1ab984889977ccabd09994,
+        type: 2}
+    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0
@@ -1375,7 +1549,7 @@ RectTransform:
   - {fileID: 148792654}
   - {fileID: 145564260}
   m_Father: {fileID: 415375750}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1676,7 +1850,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -1747,11 +1921,6 @@ Prefab:
       propertyPath: m_Name
       value: StageButton2
       objectReference: {fileID: 0}
-    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Text
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnLeft
@@ -1770,8 +1939,9 @@ Prefab:
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stage
-      value: Stage 2
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c12c3d21fbf49f4193ff36e9e702a32,
+        type: 2}
     - target: {fileID: 1174291947854058, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
       propertyPath: m_Name
       value: Number
@@ -1781,6 +1951,17 @@ Prefab:
       propertyPath: stagePanel
       value: 
       objectReference: {fileID: 851332136}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stageInfo.stage
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c12c3d21fbf49f4193ff36e9e702a32,
+        type: 2}
+    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0
@@ -1834,7 +2015,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -1905,16 +2086,6 @@ Prefab:
       propertyPath: m_Name
       value: StageButton7
       objectReference: {fileID: 0}
-    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Text
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnRight
@@ -1938,8 +2109,9 @@ Prefab:
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stage
-      value: Stage 7
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: c41258f1e60433c4f8525f57af089550,
+        type: 2}
     - target: {fileID: 1174291947854058, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
       propertyPath: m_Name
       value: Number
@@ -1949,6 +2121,22 @@ Prefab:
       propertyPath: stagePanel
       value: 
       objectReference: {fileID: 851332136}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stageInfo.stage
+      value: 
+      objectReference: {fileID: 11400000, guid: c41258f1e60433c4f8525f57af089550,
+        type: 2}
+    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0
@@ -2002,7 +2190,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -2058,16 +2246,12 @@ Prefab:
       propertyPath: m_Name
       value: StageButton6
       objectReference: {fileID: 0}
-    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Text
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stage
-      value: Stage 6
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f3f923f47e1c9f4aabe141cdd798e81,
+        type: 2}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnUp
@@ -2093,6 +2277,17 @@ Prefab:
       propertyPath: stagePanel
       value: 
       objectReference: {fileID: 851332136}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stageInfo.stage
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f3f923f47e1c9f4aabe141cdd798e81,
+        type: 2}
+    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0
@@ -2152,7 +2347,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -2223,11 +2418,6 @@ Prefab:
       propertyPath: m_Name
       value: StageButton4
       objectReference: {fileID: 0}
-    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Text
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnLeft
@@ -2251,8 +2441,9 @@ Prefab:
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stage
-      value: Stage 4
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: d12e17fb41a58f34d8e6aa24bf8905a8,
+        type: 2}
     - target: {fileID: 1174291947854058, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
       propertyPath: m_Name
       value: Number
@@ -2262,6 +2453,17 @@ Prefab:
       propertyPath: stagePanel
       value: 
       objectReference: {fileID: 851332136}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stageInfo.stage
+      value: 
+      objectReference: {fileID: 11400000, guid: d12e17fb41a58f34d8e6aa24bf8905a8,
+        type: 2}
+    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0
@@ -2315,7 +2517,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -2386,11 +2588,6 @@ Prefab:
       propertyPath: m_Name
       value: StageButton5
       objectReference: {fileID: 0}
-    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Text
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnLeft
@@ -2414,8 +2611,9 @@ Prefab:
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stage
-      value: Stage 5
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: dba006fb96d1f1447b10aa21bf2484c4,
+        type: 2}
     - target: {fileID: 1174291947854058, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
       propertyPath: m_Name
       value: Number
@@ -2425,6 +2623,17 @@ Prefab:
       propertyPath: stagePanel
       value: 
       objectReference: {fileID: 851332136}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stageInfo.stage
+      value: 
+      objectReference: {fileID: 11400000, guid: dba006fb96d1f1447b10aa21bf2484c4,
+        type: 2}
+    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0
@@ -2564,7 +2773,7 @@ Prefab:
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224650093430251172, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
@@ -2635,16 +2844,6 @@ Prefab:
       propertyPath: m_Name
       value: StageButton8
       objectReference: {fileID: 0}
-    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Text
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
-        type: 2}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnLeft
@@ -2663,13 +2862,30 @@ Prefab:
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stage
-      value: Stage 8
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 33393f1922e922c4aab24a034399016a,
+        type: 2}
     - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
         type: 2}
       propertyPath: stagePanel
       value: 
       objectReference: {fileID: 851332136}
+    - target: {fileID: 114497683853853236, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: stageInfo.stage
+      value: 
+      objectReference: {fileID: 11400000, guid: 33393f1922e922c4aab24a034399016a,
+        type: 2}
+    - target: {fileID: 114588820988116320, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176012712462678, guid: 8db2416a2b2257c4bbaa2514b4c119d2,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8db2416a2b2257c4bbaa2514b4c119d2, type: 2}
   m_IsPrefabParent: 0

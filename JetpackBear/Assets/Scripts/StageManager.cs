@@ -4,23 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StageManager : MonoBehaviour {
+	public Stage stage;
+	
 
-	public int stageNumber;
-	public string nextStage;
-	public bool isFinal;
-
-	private PlayerController bear;
 	public UICollectedHives collectedHives;
-
+	
+	private StageInfo stageInfo;
+	private PlayerController bear;
+	
+	
 	public static StageManager Instance { get; set; }
-	public int HiveCount { get; set; }
-	public string StageName 
-	{ 
-		get
-		{
-			return SceneManager.GetActiveScene().name;
-		} 
-	}
+
+	public int CollectedCoins { get; set; }
+	public int CollectedHiveCount { get; set; }
 
 	public bool IsPaused 
 	{ 
@@ -60,9 +56,8 @@ public class StageManager : MonoBehaviour {
 		IsPaused = false;
 		GameManager.Instance.HideCursor();
 
+		stageInfo = DataManager.LoadStageInfo(stage.key);
 		bear = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<PlayerController>();
-
-		HiveCount = 0;
 	}
 
 	void Update()
@@ -107,13 +102,18 @@ public class StageManager : MonoBehaviour {
 
 	public void AddHive()
 	{
-		HiveCount++;
+		CollectedHiveCount++;
 		
 		if(collectedHives != null)
 		{
-			collectedHives.SetHives(HiveCount);
+			collectedHives.SetHives(CollectedHiveCount);
 			collectedHives.ShowForSeconds(3f);
 		}
+	}
+
+	public void AddCoint()
+	{
+		CollectedCoins++;
 	}
 
 	public IEnumerator LoseCoroutine()
@@ -132,13 +132,16 @@ public class StageManager : MonoBehaviour {
 	public IEnumerator WinCoroutine()
 	{
 		// Salva a quantidade de colmeias coletadas
-		int savedHiveCount = GameManager.Instance.GetSavedHiveCount(StageName);
-		if(HiveCount > savedHiveCount)
-			GameManager.Instance.SaveHiveCount(StageName, HiveCount);
-
-		// Salva o progresso do jogo (o últime level concluído)
-		if(stageNumber > GameManager.Instance.StageProgress)
-			GameManager.Instance.StageProgress = stageNumber;
+		if(CollectedHiveCount > stageInfo.hiveCount)
+		{		
+			stageInfo.hiveCount = CollectedHiveCount;
+			DataManager.SaveStageInfo(stage.key, stageInfo);
+		}
+		
+		// Libera o próximo level
+		StageInfo nextStageInfo = new StageInfo();
+		nextStageInfo.unlocked = true;
+		DataManager.SaveStageInfo(stage.nextStage.key, nextStageInfo);
 
 		yield return new WaitForSeconds(1.5f);
 
@@ -150,7 +153,7 @@ public class StageManager : MonoBehaviour {
 
 	public void NextStage()
 	{
-		SceneManager.LoadScene(nextStage);
+		SceneManager.LoadScene(stage.nextStage.scene);
 	}
 
 	public void RestartStage()

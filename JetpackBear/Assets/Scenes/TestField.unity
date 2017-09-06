@@ -2040,7 +2040,7 @@ Prefab:
         type: 2}
       propertyPath: stageUI
       value: 
-      objectReference: {fileID: 1456152364}
+      objectReference: {fileID: 0}
     - target: {fileID: 223081725285982594, guid: c6484e2603ae15a44b15a9dfd20f26f7,
         type: 2}
       propertyPath: m_Camera
@@ -2260,6 +2260,16 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 212867592644968230, guid: 34f262bdab4c91b43963063e5495ccea,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300004, guid: 83ab1cd0ad2bc7c469b24b9234d7ae8c,
+        type: 3}
+    - target: {fileID: 4511658014104382, guid: 34f262bdab4c91b43963063e5495ccea, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34f262bdab4c91b43963063e5495ccea, type: 2}
   m_IsPrefabParent: 0
@@ -2417,12 +2427,6 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 50445778791083462, guid: 34f262bdab4c91b43963063e5495ccea,
     type: 2}
   m_PrefabInternal: {fileID: 1395812598}
---- !u!114 &1456152364 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114684465421305012, guid: c6484e2603ae15a44b15a9dfd20f26f7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1380200047}
-  m_Script: {fileID: 11500000, guid: 5c71fa3cc52724c4a8d28e27f3de6c90, type: 3}
 --- !u!4 &1456203442 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4837375082824364, guid: 806ac1a84f569c14e8b3c4835933c08d,

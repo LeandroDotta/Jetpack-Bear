@@ -111,7 +111,7 @@ public class StageManager : MonoBehaviour {
 		}
 	}
 
-	public void AddCoint()
+	public void AddCoin()
 	{
 		CollectedCoins++;
 	}
@@ -139,9 +139,15 @@ public class StageManager : MonoBehaviour {
 		}
 		
 		// Libera o próximo level
-		StageInfo nextStageInfo = new StageInfo();
-		nextStageInfo.unlocked = true;
-		DataManager.SaveStageInfo(stage.nextStage.key, nextStageInfo);
+		StageInfo nextStageInfo = DataManager.LoadStageInfo(stage.nextStage.key);
+		if(!nextStageInfo.unlocked)
+		{
+			nextStageInfo.unlocked = true;
+			DataManager.SaveStageInfo(stage.nextStage.key, nextStageInfo);
+		}
+
+		// Adiciona as moedas coletadas no saldo
+		DataManager.Coins += CollectedCoins;
 
 		yield return new WaitForSeconds(1.5f);
 

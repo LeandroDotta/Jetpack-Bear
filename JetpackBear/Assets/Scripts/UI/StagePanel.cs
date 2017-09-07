@@ -26,15 +26,32 @@ public class StagePanel : MonoBehaviour {
 		defaultColor = hive1.color;
 	}
 
-	public void Show(string name, int hiveCount)
+	public void Show(Stage stage, StageInfo info)
 	{
 		rect.anchoredPosition = startPos;
 
-		textName.text = name;
+		textName.text = stage.displayName;
 
-		hive1.color = hiveCount >= 1 ? Color.white : defaultColor;
-		hive2.color = hiveCount >= 2 ? Color.white : defaultColor;
-		hive3.color = hiveCount >= 3 ? Color.white : defaultColor;
+		if(stage.type == StageType.Normal)
+		{
+			hive1.gameObject.SetActive(true);
+			hive2.gameObject.SetActive(true);
+			hive3.gameObject.SetActive(true);
+
+			hive1.color = info.hiveCount >= 1 ? Color.white : defaultColor;
+			hive2.color = info.hiveCount >= 2 ? Color.white : defaultColor;
+			hive3.color = info.hiveCount >= 3 ? Color.white : defaultColor;
+
+			textName.alignment = TextAnchor.MiddleLeft;
+		}
+		else if(stage.type == StageType.Cinematic)
+		{
+			hive1.gameObject.SetActive(false);
+			hive2.gameObject.SetActive(false);
+			hive3.gameObject.SetActive(false);
+
+			textName.alignment = TextAnchor.MiddleCenter;
+		}
 
 		anim.Play("ShowStagePanel", -1, 0);
 	}

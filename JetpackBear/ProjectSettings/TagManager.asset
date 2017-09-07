@@ -8,6 +8,8 @@ TagManager:
   - Pickup
   - Hazard_Bee
   - Hazard_Spike
+  - Hive
+  - Coin
   layers:
   - Default
   - TransparentFX

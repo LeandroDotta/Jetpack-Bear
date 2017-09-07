@@ -36,7 +36,6 @@ public class StageButton : MonoBehaviour, ISelectHandler, IPointerEnterHandler {
 
 		if(stageInfo.unlocked)
 		{
-			print(stage.type);
 			if(stage.type == StageType.Normal)
 				numberText.gameObject.SetActive(true);
 			else if (stage.type == StageType.Cinematic)
@@ -48,9 +47,18 @@ public class StageButton : MonoBehaviour, ISelectHandler, IPointerEnterHandler {
 			padlock.gameObject.SetActive(true);
 		}		
 
-		if(stageInfo.hiveCount >= 1) hive1.color = Color.white;
-		if(stageInfo.hiveCount >= 2) hive2.color = Color.white;
-		if(stageInfo.hiveCount >= 3) hive3.color = Color.white;
+		if(stage.type == StageType.Normal)
+		{
+			if(stageInfo.hiveCount >= 1) hive1.color = Color.white;
+			if(stageInfo.hiveCount >= 2) hive2.color = Color.white;
+			if(stageInfo.hiveCount >= 3) hive3.color = Color.white;
+		}
+		else if (stage.type == StageType.Cinematic)
+		{
+			hive1.gameObject.SetActive(false);
+			hive2.gameObject.SetActive(false);
+			hive3.gameObject.SetActive(false);
+		}
 	}
 
 	public void LoadStage()
@@ -61,12 +69,12 @@ public class StageButton : MonoBehaviour, ISelectHandler, IPointerEnterHandler {
     public void OnSelect(BaseEventData eventData)
     {
         if(stagePanel != null && button.interactable)
-			stagePanel.Show(stage.displayName, stageInfo.hiveCount);
+			stagePanel.Show(stage, stageInfo);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         if(stagePanel != null && button.interactable)
-			stagePanel.Show(stage.displayName, stageInfo.hiveCount);
+			stagePanel.Show(stage, stageInfo);
     }
 }

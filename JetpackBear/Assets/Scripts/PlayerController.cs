@@ -163,10 +163,18 @@ public class PlayerController : MonoBehaviour {
 			StartCoroutine(StageManager.Instance.LoseCoroutine());
 		}
 
-		if(other.CompareTag("Pickup"))
+		if(other.CompareTag("Hive"))
 		{
 			SoundEffects.Instance.Play(SoundEffects.Instance.sfxPickup);
 			StageManager.Instance.AddHive();
+
+			Destroy(other.gameObject);
+		}
+
+		if(other.CompareTag("Coin"))
+		{
+			SoundEffects.Instance.Play(SoundEffects.Instance.sfxPickup);
+			StageManager.Instance.AddCoin();
 
 			Destroy(other.gameObject);
 		}

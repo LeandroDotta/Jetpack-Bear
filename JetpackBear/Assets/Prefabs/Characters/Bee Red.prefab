@@ -82,9 +82,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4193615507141106}
   - component: {fileID: 82886469520874880}
-  - component: {fileID: 114138929625591720}
+  - component: {fileID: 114528470412816340}
   m_Layer: 0
-  m_Name: Bee
+  m_Name: Bee Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1654249922000476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25, y: 13, z: 0}
+  m_LocalPosition: {x: 7.281633, y: 10.425556, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4508185212747874}
@@ -202,8 +202,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.081394196, y: -0.16289043}
-  m_Size: {x: 0.7274823, y: 0.96845865}
+  m_Offset: {x: 0.1, y: -0.2}
+  m_Size: {x: 0.7, y: 0.9}
   m_Direction: 0
 --- !u!82 &82886469520874880
 AudioSource:
@@ -295,7 +295,7 @@ Animator:
   m_GameObject: {fileID: 1848382293918120}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1c102c9441716d44bb6e864e27ec8132, type: 2}
+  m_Controller: {fileID: 22100000, guid: f984dbe20d21d07488e05c5f96586dbe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -336,7 +336,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.3
+  m_Time: 0.5
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -354,7 +354,7 @@ TrailRenderer:
       m_RotationOrder: 0
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.8896551, b: 0, a: 1}
+      key0: {r: 1, g: 0.318, b: 0, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -386,9 +386,9 @@ TrailRenderer:
     alignment: 0
     textureMode: 0
     generateLightingData: 0
-  m_MinVertexDistance: 1
+  m_MinVertexDistance: 0
   m_Autodestruct: 0
---- !u!114 &114138929625591720
+--- !u!114 &114528470412816340
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -396,12 +396,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1654249922000476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1b1e27a59296f94b90c077fc357c084, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d9a38bad35f07142ae63674e5cfbe4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  delayBetweenPoints: 1
-  cyclic: 0
+  speed: 6
+  delayBetweenPoints: 0
+  cyclic: 1
 --- !u!212 &212344650406560310
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -434,9 +434,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: e44ae6fd63b4fb44d962bb362ced095d, type: 3}
+  m_Sprite: {fileID: 21300006, guid: e44ae6fd63b4fb44d962bb362ced095d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2, y: 2}

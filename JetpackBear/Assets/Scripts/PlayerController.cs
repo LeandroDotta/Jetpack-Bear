@@ -192,6 +192,27 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if(!enabled) return;
+
+		if(other.collider.CompareTag("Hazard_Bee"))
+		{
+			// Desativa o jogador
+			enabled = false;
+
+			// Animação de inchar com a picada
+			AnimationLoseBee.Play();
+
+			// Tocas os sons
+			SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
+			SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
+
+			// Chama a rotina para exibir a tela de derrota
+			StartCoroutine(StageManager.Instance.LoseCoroutine());
+		}
+	}
+
 	private void TurnJetpack(bool isOn)
 	{
 		

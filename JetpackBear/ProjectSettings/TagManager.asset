@@ -20,8 +20,8 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
+  - Player
+  - Ignored By Player
   - 
   - 
   - 
@@ -52,6 +52,9 @@ TagManager:
     locked: 0
   - name: Bear
     uniqueID: 1662593661
+    locked: 0
+  - name: Characters
+    uniqueID: 1344100817
     locked: 0
   - name: Foreground
     uniqueID: 3031905049

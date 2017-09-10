@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4799778316794292}
   - component: {fileID: 212839580257075346}
   - component: {fileID: 95427283194189324}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: JetpackBurst1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 82390331172180450}
   - component: {fileID: 114307127473460342}
   - component: {fileID: 114317470207368100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bear
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4131413259534630}
   - component: {fileID: 320929483748893624}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WinAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4511658014104382}
   - component: {fileID: 212867592644968230}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4422296518507426}
   - component: {fileID: 320716102613279950}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LoseAnimation_Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4122593444927556}
   - component: {fileID: 212006309361110536}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4528310545866078}
   - component: {fileID: 122720129797604468}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 4783792176515294}
   - component: {fileID: 212457301714117602}
   - component: {fileID: 95666940195988370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 4208354935676624}
   - component: {fileID: 212030111789374354}
   - component: {fileID: 95622660551066558}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 4383395197937808}
   - component: {fileID: 212559555032855202}
   - component: {fileID: 95312072299505208}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4463715076037754}
   - component: {fileID: 212444819264634898}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 4582348924941112}
   - component: {fileID: 212189610024706016}
   - component: {fileID: 95104713886464662}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 4536580257475838}
   - component: {fileID: 212434833436930890}
   - component: {fileID: 95253166284905472}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 4115647101991876}
   - component: {fileID: 212192478807923496}
   - component: {fileID: 95431042235833330}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4706304797982436}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Injures
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 4177158776784274}
   - component: {fileID: 212343781986416644}
   - component: {fileID: 95506275031487802}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4782734015408624}
   - component: {fileID: 212866446488829148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArmBehind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 4894664475473956}
   - component: {fileID: 212563492830866970}
   - component: {fileID: 95225223964655746}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4859889423129570}
   - component: {fileID: 212582970855696378}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Jetpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4575627658597736}
   - component: {fileID: 212038736798401286}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArmFront2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 4094028064439548}
   - component: {fileID: 212002111470085974}
   - component: {fileID: 95520911093129318}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 4960612905689514}
   - component: {fileID: 212390135769133876}
   - component: {fileID: 95203079725067754}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: JetpackBurst2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 4939056312953760}
   - component: {fileID: 198898962565413886}
   - component: {fileID: 199868632149288516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: JetpackSmoke2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 4266948250477848}
   - component: {fileID: 198021645020014852}
   - component: {fileID: 199701409907812108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: JetpackSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4031089699226500}
   - component: {fileID: 122713993755468696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 4687662076351286}
   - component: {fileID: 212718397013862932}
   - component: {fileID: 95927948770007928}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4491099575581784}
   - component: {fileID: 212835226481512050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArmBehind2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4946545318003378}
   - component: {fileID: 320829517601810736}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LoseAnimation_Bee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 4483042440946614}
   - component: {fileID: 212991553740756410}
   - component: {fileID: 95402718574908578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4745158189449918}
   - component: {fileID: 212260996742464462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArmFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4257623932177206}
   - component: {fileID: 212461467638461464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Belt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 4652659477523900}
   - component: {fileID: 212960893874158778}
   - component: {fileID: 95500673553235084}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BearInjure (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4908293976301870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8098,7 +8098,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1263062247
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c614746ccc202e54d8b4e46a54421ada, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

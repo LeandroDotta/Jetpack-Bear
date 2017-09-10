@@ -1,12 +1,18 @@
 fileFormatVersion: 2
 guid: e44ae6fd63b4fb44d962bb362ced095d
-timeCreated: 1502754709
+timeCreated: 1504807659
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Bee_0
-    21300002: Bee_1
-    21300004: Bee_2
+    21300000: BeeGreen_0
+    21300002: BeeGreen_1
+    21300004: BeeGreen_2
+    21300006: BeeRed_0
+    21300008: BeeRed_1
+    21300010: BeeRed_2
+    21300012: Bee_0
+    21300014: Bee_1
+    21300016: Bee_2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -101,6 +107,90 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites:
+    - serializedVersion: 2
+      name: BeeGreen_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeeGreen_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeeGreen_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeeRed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeeRed_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeeRed_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     - serializedVersion: 2
       name: Bee_0
       rect:

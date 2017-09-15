@@ -13,7 +13,10 @@ public class SpriteProcessor : AssetPostprocessor {
         {
             TextureImporter textureImporter = (TextureImporter) assetImporter;
             textureImporter.textureType = TextureImporterType.Sprite;
-			textureImporter.spritePixelsPerUnit = 32;
+
+            if(textureImporter.spritePixelsPerUnit == 100)
+			    textureImporter.spritePixelsPerUnit = 32;
+            
 			textureImporter.filterMode = FilterMode.Point;
 			textureImporter.textureCompression = TextureImporterCompression.Uncompressed;
         }

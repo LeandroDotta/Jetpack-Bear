@@ -130,38 +130,68 @@ public class PlayerController : MonoBehaviour {
 	{
 		if(!enabled) return;
 			
-
-		if(other.CompareTag("Hazard_Bee"))
+		if(other.CompareTag("Hazard"))
 		{
 			// Desativa o jogador
 			enabled = false;
 
-			// Animação de inchar com a picada
-			AnimationLoseBee.Play();
-
 			// Tocas os sons
 			SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
 			SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
+
+			Hazard hazard = other.transform.GetComponent<Hazard>();
+			switch(hazard.type)
+			{
+				case Hazard.HazardType.Spike:
+					// Animação Explosão
+					AnimationLoseExplosion.Play();
+					break;
+					
+				case Hazard.HazardType.Bee:
+					// Animação de inchar com a picada
+					AnimationLoseBee.Play();
+					break;
+
+				case Hazard.HazardType.Flytrap:
+					// Animação sendo comido pela planta
+					break;
+			}
 
 			// Chama a rotina para exibir a tela de derrota
 			StartCoroutine(StageManager.Instance.LoseCoroutine());
 		}
 
-		if(other.CompareTag("Hazard_Spike"))
-		{
-			// Desativa o jogador
-			transform.rotation = Quaternion.identity;
-			enabled = false;
+		// if(other.CompareTag("Hazard_Bee"))
+		// {
+		// 	// Desativa o jogador
+		// 	enabled = false;
 
-			// Animação Explosão
-			AnimationLoseExplosion.Play();
+		// 	// Animação de inchar com a picada
+		// 	AnimationLoseBee.Play();
 
-			// Tocas os sons
-			SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
-			SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
+		// 	// Tocas os sons
+		// 	SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
+		// 	SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
 
-			StartCoroutine(StageManager.Instance.LoseCoroutine());
-		}
+		// 	// Chama a rotina para exibir a tela de derrota
+		// 	StartCoroutine(StageManager.Instance.LoseCoroutine());
+		// }
+
+		// if(other.CompareTag("Hazard_Spike"))
+		// {
+		// 	// Desativa o jogador
+		// 	transform.rotation = Quaternion.identity;
+		// 	enabled = false;
+
+		// 	// Animação Explosão
+		// 	AnimationLoseExplosion.Play();
+
+		// 	// Tocas os sons
+		// 	SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
+		// 	SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
+
+		// 	StartCoroutine(StageManager.Instance.LoseCoroutine());
+		// }
 
 		if(other.CompareTag("Hive"))
 		{
@@ -192,26 +222,26 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D other)
-	{
-		if(!enabled) return;
+	// void OnCollisionEnter2D(Collision2D other)
+	// {
+	// 	if(!enabled) return;
 
-		if(other.collider.CompareTag("Hazard_Bee"))
-		{
-			// Desativa o jogador
-			enabled = false;
+	// 	if(other.collider.CompareTag("Hazard_Bee"))
+	// 	{
+	// 		// Desativa o jogador
+	// 		enabled = false;
 
-			// Animação de inchar com a picada
-			AnimationLoseBee.Play();
+	// 		// Animação de inchar com a picada
+	// 		AnimationLoseBee.Play();
 
-			// Tocas os sons
-			SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
-			SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
+	// 		// Tocas os sons
+	// 		SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
+	// 		SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
 
-			// Chama a rotina para exibir a tela de derrota
-			StartCoroutine(StageManager.Instance.LoseCoroutine());
-		}
-	}
+	// 		// Chama a rotina para exibir a tela de derrota
+	// 		StartCoroutine(StageManager.Instance.LoseCoroutine());
+	// 	}
+	// }
 
 	private void TurnJetpack(bool isOn)
 	{

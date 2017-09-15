@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 212644153841391148}
   - component: {fileID: 61078030866864274}
   - component: {fileID: 60174452338221800}
+  - component: {fileID: 114657772266618912}
   m_Layer: 0
   m_Name: ThornPlant2
-  m_TagString: Hazard_Spike
+  m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,6 +122,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &114657772266618912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1020960772568358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183a4b39cb57a884487f924a38fd5527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!212 &212644153841391148
 SpriteRenderer:
   m_ObjectHideFlags: 1

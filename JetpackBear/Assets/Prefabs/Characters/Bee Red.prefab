@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4026644987916150}
   - component: {fileID: 212344650406560310}
   - component: {fileID: 70663996224081858}
+  - component: {fileID: 114361844579780408}
   m_Layer: 0
   m_Name: Sprite
-  m_TagString: Hazard_Bee
+  m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +128,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1654249922000476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.281633, y: 10.425556, z: 0}
+  m_LocalPosition: {x: -0.73942363, y: -5.9402437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4508185212747874}
@@ -388,6 +389,18 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0
   m_Autodestruct: 0
+--- !u!114 &114361844579780408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087192559434430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183a4b39cb57a884487f924a38fd5527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
 --- !u!114 &114528470412816340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -401,7 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   delayBetweenPoints: 0
-  cyclic: 1
+  cyclic: 0
 --- !u!212 &212344650406560310
 SpriteRenderer:
   m_ObjectHideFlags: 1

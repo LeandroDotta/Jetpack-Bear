@@ -10,6 +10,7 @@ TagManager:
   - Hazard_Spike
   - Hive
   - Coin
+  - Hazard_Flytrap
   layers:
   - Default
   - TransparentFX

@@ -16,4 +16,4 @@ MonoBehaviour:
   displayName: Stage 10
   scene: Stage 10
   type: 0
-  nextStage: {fileID: 11400000, guid: 4c58549e01707f748b61e59f241740f3, type: 2}
+  nextStage: {fileID: 11400000, guid: 45b96ab3f9202604db83bbef28703b1b, type: 2}

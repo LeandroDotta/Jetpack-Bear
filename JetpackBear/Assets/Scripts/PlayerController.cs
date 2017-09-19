@@ -154,6 +154,10 @@ public class PlayerController : MonoBehaviour {
 
 				case Hazard.HazardType.Flytrap:
 					// Animação sendo comido pela planta
+					FlytrapPlant plant = other.transform.parent.GetComponent<FlytrapPlant>();
+					rb2d.velocity = Vector2.zero;
+					rb2d.isKinematic = true;
+					plant.SwallowBear(this);
 					break;
 			}
 

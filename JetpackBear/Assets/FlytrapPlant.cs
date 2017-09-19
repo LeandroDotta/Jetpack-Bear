@@ -8,10 +8,12 @@ public class FlytrapPlant : MonoBehaviour
 
 	private bool attacking;
 	private Animator anim;
+	private Transform inside;
 
 	void Start()
 	{
 		anim = GetComponent<Animator>();
+		inside = transform.Find("Body").Find("Inside");
 	}
 
 	private void AttackStart()
@@ -26,6 +28,33 @@ public class FlytrapPlant : MonoBehaviour
 	private void AttackEnd()
 	{
 		attacking = false;
+	}
+
+	public void SwallowBear(PlayerController bear)
+	{
+		StartCoroutine(SwallowCoroutine(bear));
+	}
+
+	private IEnumerator SwallowCoroutine(PlayerController bear)
+	{
+		anim.SetBool("swallowed", true);
+		inside.gameObject.SetActive(true);
+
+		float duration = 0.1f;
+		float timer = 0;
+
+		Vector2 startPos = bear.transform.position;
+
+		do
+		{
+			yield return new WaitForEndOfFrame();
+			timer += Time.deltaTime;
+
+			Vector2 newPosition = Vector2.Lerp(startPos, inside.position, timer / duration);
+			bear.transform.position = newPosition;
+		}while(timer <= duration);
+
+		bear.gameObject.SetActive(false);
 	}
 
 	private IEnumerator AttackCoroutine()

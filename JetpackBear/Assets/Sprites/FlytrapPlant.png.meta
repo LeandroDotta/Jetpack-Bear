@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d90256d813324ed43928f8f0e9f91a81
-timeCreated: 1505398055
+guid: aa417656a5c42c4428b33a4f383061bd
+timeCreated: 1505538286
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,11 +9,31 @@ TextureImporter:
     21300004: FlytrapPlantSpritesheet_2
     21300006: FlytrapPlantSpritesheet_3
     21300008: FlytrapPlantSpritesheet_4
-    21300010: FlytrapPlant_0
-    21300012: FlytrapPlant_1
-    21300014: FlytrapPlant_2
-    21300016: FlytrapPlant_3
-    21300018: FlytrapPlant_4
+    21300010: FlytrapPlantSpritesheet_5
+    21300012: FlytrapPlantSpritesheet_6
+    21300014: FlytrapPlantSpritesheet_7
+    21300016: FlytrapPlantSpritesheet_8
+    21300018: FlytrapPlantSpritesheet_9
+    21300020: FlytrapPlantSpritesheet_10
+    21300022: FlytrapPlantSpritesheet_11
+    21300024: FlytrapPlantSpritesheet_12
+    21300026: FlytrapPlantSpritesheet_13
+    21300028: FlytrapPlantSpritesheet_14
+    21300030: FlytrapPlant_0
+    21300032: FlytrapPlant_1
+    21300034: FlytrapPlant_2
+    21300036: FlytrapPlant_3
+    21300038: FlytrapPlant_4
+    21300040: FlytrapPlant_5
+    21300042: FlytrapPlant_6
+    21300044: FlytrapPlant_Back_0
+    21300046: FlytrapPlant_Back_1
+    21300048: FlytrapPlant_Back_2
+    21300050: FlytrapPlant_Inside_0
+    21300052: FlytrapPlant_Inside_1
+    21300054: FlytrapPlant_Inside_2
+    21300056: FlytrapPlant_Inside_3
+    21300058: FlytrapPlant_Inside_4
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -113,7 +133,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 256
         width: 128
         height: 128
       alignment: 9
@@ -127,7 +147,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 256
         width: 128
         height: 128
       alignment: 9
@@ -141,7 +161,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 256
         width: 128
         height: 128
       alignment: 9
@@ -155,7 +175,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 0
+        y: 256
         width: 128
         height: 128
       alignment: 9
@@ -169,11 +189,151 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 0
+        y: 256
         width: 128
         height: 128
       alignment: 9
       pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_Back_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_Back_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_Back_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_Inside_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_Inside_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_Inside_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_Inside_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FlytrapPlant_Inside_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[CreateAssetMenu(fileName = "Stage", menuName = "Create Stage Object")]
+[CreateAssetMenu(fileName = "Stage", menuName = "Add Data.../Stage")]
 public class Stage : ScriptableObject 
 {
 	public int number;

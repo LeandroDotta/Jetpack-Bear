@@ -10,6 +10,24 @@ public class UIEvents : MonoBehaviour
 		SceneManager.LoadScene(name);
 	}
 
+	public void LoadSceneAdditive(string name)
+	{
+		Scene scene = SceneManager.GetSceneByName(name);
+		
+		// Carrega a cena apenas se ela ainda não estiver carregada
+		if(scene.buildIndex == -1)
+		{
+			SceneManager.LoadScene(name, LoadSceneMode.Additive);
+		}
+		
+	}
+
+	public void UnloadSceneAdditive(string name)
+	{
+		Scene scene = SceneManager.GetSceneByName(name);
+		SceneManager.UnloadSceneAsync(scene);
+	}
+
 	public void Pause()
 	{
 		if(StageManager.Instance != null)

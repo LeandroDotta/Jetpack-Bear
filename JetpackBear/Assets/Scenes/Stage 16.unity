@@ -9928,10 +9928,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 82390331172180450, guid: 34f262bdab4c91b43963063e5495ccea,
+    - target: {fileID: 114317470207368100, guid: 34f262bdab4c91b43963063e5495ccea,
         type: 2}
-      propertyPath: spreadCustomCurve.m_RotationOrder
-      value: 0
+      propertyPath: invulnerabilityTime
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34f262bdab4c91b43963063e5495ccea, type: 2}

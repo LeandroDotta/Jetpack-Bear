@@ -10,7 +10,9 @@ public class StageManager : MonoBehaviour {
 	public UICollectedHives collectedHives;
 	
 	private StageInfo stageInfo;
-	private PlayerController bear;
+
+	[HideInInspector]
+	public PlayerController bear;
 	
 	
 	public static StageManager Instance { get; set; }
@@ -116,6 +118,12 @@ public class StageManager : MonoBehaviour {
 		CollectedCoins++;
 	}
 
+	public void Lose()
+	{
+		SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
+		StartCoroutine(LoseCoroutine());
+	}
+
 	public IEnumerator LoseCoroutine()
 	{
 		yield return new WaitForSeconds(1.5f);
@@ -148,6 +156,9 @@ public class StageManager : MonoBehaviour {
 
 		// Adiciona as moedas coletadas no saldo
 		DataManager.Coins += CollectedCoins;
+
+		if(bear.magnetController.powerUp.units > 0)
+			bear.magnetController.Descrease();
 
 		yield return new WaitForSeconds(1.5f);
 

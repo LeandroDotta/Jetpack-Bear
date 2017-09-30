@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelection.unity
     guid: ca2c004b49525084db6ca136b5d10915
   - enabled: 1
+    path: Assets/Scenes/Store.unity
+    guid: ac86059b00f587d46b475ba38cb504c1
+  - enabled: 1
     path: Assets/Scenes/Prologue.unity
     guid: fe19aa02ff99e694b85cf98ac7035dda
   - enabled: 1
@@ -51,11 +54,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage 12.unity
     guid: 51dda7e3ed6ab554fa5f00a7b02e6c00
   - enabled: 1
-    path: Assets/Scenes/_OLDStage 9.unity
-    guid: c50b7412ac168864c8fc7990f363dec4
+    path: Assets/Scenes/Stage 13.unity
+    guid: 4601b91f0c3d3bc498d7d5056f05cd04
   - enabled: 1
-    path: Assets/Scenes/_OLDStage 10.unity
+    path: Assets/Scenes/Stage 14.unity
+    guid: becf8410bc4c2d84b83679667477420d
+  - enabled: 1
+    path: Assets/Scenes/Stage 15.unity
+    guid: 64c18d37c593fac4f89b733996dca4af
+  - enabled: 1
+    path: Assets/Scenes/Stage 16.unity
     guid: c02387e7423eca14fbd5cd352859cd4c
+  - enabled: 1
+    path: Assets/Scenes/Stage 17.unity
+    guid: 27565311b49b4ec408cd71c568d45d25
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: 50cfcb7dec31eb04082c163cd6744cb9

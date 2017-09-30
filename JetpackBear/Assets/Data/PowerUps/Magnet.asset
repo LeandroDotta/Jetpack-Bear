@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754d7815b006fa5459ff1614aae6813a, type: 3}
+  m_Name: Magnet
+  m_EditorClassIdentifier: 
+  id: 2
+  title: MAGNET
+  description: "Um \xEDm\xE3 para ser acoplado na mochila jato e aumentar seus lucros!\r\nQuando
+    equipado, o \xEDm\xE3 atrai as moedas pr\xF3ximas ao jogador. Cada item adquirido
+    pode ser utilizado apenas uma vez e quando a fase \xE9 conclu\xEDda ele \xE9 removido\r."
+  price: 50
+  icon: {fileID: 21300000, guid: 093fc7972323e99449306fce3144f1c1, type: 3}
+  isAccumulative: 1
+  units: 3

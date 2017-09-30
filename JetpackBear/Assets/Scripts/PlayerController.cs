@@ -7,16 +7,23 @@ public class PlayerController : MonoBehaviour {
 	public float flyForce;
 	public float moveForce;
 
+	public float invulnerabilityTime;
+
 	public LayerMask groundLayer;
 	public Vector2 groundCheckSize;
 
 	private bool holdFly;
+	private bool invulnerable;
 	private float axisHorizontal;
 	private float accelerationX;
 
 	private Rigidbody2D rb2d;
 	private Collider2D coll;
 
+	[HideInInspector]
+	public PlayerShield shieldController;
+	[HideInInspector]
+	public Magnet magnetController;
 	
 	private Animator burstAnim1;
 	private Animator burstAnim2;
@@ -35,6 +42,8 @@ public class PlayerController : MonoBehaviour {
 		coll = GetComponent<Collider2D>();
 		Anim = GetComponent<Animator>();
 		audioSource = GetComponent<AudioSource>();
+		shieldController = GetComponentInChildren<PlayerShield>();
+		magnetController = GetComponentInChildren<Magnet>();	
 
 		AnimationLoseBee = transform.Find("LoseAnimation_Bee").GetComponent<PlayableDirector>();
 		AnimationLoseExplosion = transform.Find("LoseAnimation_Explosion").GetComponent<PlayableDirector>();		
@@ -45,6 +54,12 @@ public class PlayerController : MonoBehaviour {
 		burstAnim2 = jetpack.Find("JetpackBurst2").GetComponent<Animator>();
 
 		smokes = jetpack.GetComponentsInChildren<ParticleSystem>();
+		
+		// if(DataManager.Shield)
+		shieldController.Show();
+
+		// if(DataManager.MagnetCount > 0)
+		magnetController.Show();
 	}
 
 	void FixedUpdate()
@@ -77,19 +92,10 @@ public class PlayerController : MonoBehaviour {
 			scale.x = -1;
 
 		transform.localScale = scale;
-
 		transform.rotation = Quaternion.Euler(0, 0, -(rb2d.velocity.x*3));
 
 
 		audioSource.mute = !holdFly || !enabled;
-		// if(holdFly && !audio.isPlaying)
-		// {
-		// 	audio.Play();
-		// }
-		// else if(!holdFly && audio.isPlaying)
-		// {
-		// 	audio.Stop();
-		// }
 
 		if(Input.GetButtonDown("Cancel"))
 		{
@@ -117,6 +123,15 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	private IEnumerator InvulnerableCoroutine()
+	{
+		invulnerable = true;
+
+		yield return new WaitForSeconds(invulnerabilityTime);
+
+		invulnerable = false;
+	}
+
 	void OnDrawGizmos()
 	{
 		coll = GetComponent<Collider2D>();
@@ -126,76 +141,54 @@ public class PlayerController : MonoBehaviour {
 		Gizmos.DrawWireCube(center, groundCheckSize);
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerStay2D(Collider2D other)
 	{
 		if(!enabled) return;
 			
 		if(other.CompareTag("Hazard"))
 		{
-			// Desativa o jogador
-			enabled = false;
-
-			// Tocas os sons
-			SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
-			SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
-
 			Hazard hazard = other.transform.GetComponent<Hazard>();
-			switch(hazard.type)
+			
+			if(hazard.type == Hazard.HazardType.Flytrap)
 			{
-				case Hazard.HazardType.Spike:
-					// Animação Explosão
-					AnimationLoseExplosion.Play();
-					break;
-					
-				case Hazard.HazardType.Bee:
-					// Animação de inchar com a picada
-					AnimationLoseBee.Play();
-					break;
+				// Desativa o jogador
+				enabled = false;
+				
+				// Chama a rotina para exibir a tela de derrota
+				StageManager.Instance.Lose();
 
-				case Hazard.HazardType.Flytrap:
-					// Animação sendo comido pela planta
-					FlytrapPlant plant = other.transform.parent.GetComponent<FlytrapPlant>();
-					rb2d.velocity = Vector2.zero;
-					rb2d.isKinematic = true;
-					plant.SwallowBear(this);
-					break;
+				// Animação sendo comido pela planta
+				FlytrapPlant plant = other.transform.parent.GetComponent<FlytrapPlant>();
+				rb2d.velocity = Vector2.zero;
+				rb2d.isKinematic = true;
+				plant.SwallowBear(this);
 			}
+			else if(!invulnerable)
+			{
+				// Toca o som de receber dano
+				SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
 
-			// Chama a rotina para exibir a tela de derrota
-			StartCoroutine(StageManager.Instance.LoseCoroutine());
+				if(shieldController.powerUp.Enabled)
+				{
+					shieldController.Break();
+					StartCoroutine(InvulnerableCoroutine());
+				}
+				else
+				{
+					// Desativa o jogador
+					enabled = false;
+					
+					// Chama a rotina para exibir a tela de derrota
+					StageManager.Instance.Lose();
+
+					// Exibe a animação para cada tipo de ameaça
+					if(hazard.type == Hazard.HazardType.Spike)
+						AnimationLoseExplosion.Play();
+					else if(hazard.type == Hazard.HazardType.Bee)
+						AnimationLoseBee.Play();
+				}
+			}
 		}
-
-		// if(other.CompareTag("Hazard_Bee"))
-		// {
-		// 	// Desativa o jogador
-		// 	enabled = false;
-
-		// 	// Animação de inchar com a picada
-		// 	AnimationLoseBee.Play();
-
-		// 	// Tocas os sons
-		// 	SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
-		// 	SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
-
-		// 	// Chama a rotina para exibir a tela de derrota
-		// 	StartCoroutine(StageManager.Instance.LoseCoroutine());
-		// }
-
-		// if(other.CompareTag("Hazard_Spike"))
-		// {
-		// 	// Desativa o jogador
-		// 	transform.rotation = Quaternion.identity;
-		// 	enabled = false;
-
-		// 	// Animação Explosão
-		// 	AnimationLoseExplosion.Play();
-
-		// 	// Tocas os sons
-		// 	SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
-		// 	SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
-
-		// 	StartCoroutine(StageManager.Instance.LoseCoroutine());
-		// }
 
 		if(other.CompareTag("Hive"))
 		{
@@ -225,27 +218,6 @@ public class PlayerController : MonoBehaviour {
 			StartCoroutine(StageManager.Instance.WinCoroutine());
 		}
 	}
-
-	// void OnCollisionEnter2D(Collision2D other)
-	// {
-	// 	if(!enabled) return;
-
-	// 	if(other.collider.CompareTag("Hazard_Bee"))
-	// 	{
-	// 		// Desativa o jogador
-	// 		enabled = false;
-
-	// 		// Animação de inchar com a picada
-	// 		AnimationLoseBee.Play();
-
-	// 		// Tocas os sons
-	// 		SoundEffects.Instance.Play(SoundEffects.Instance.sfxHit);
-	// 		SoundEffects.Instance.Play(SoundEffects.Instance.sfxLose);
-
-	// 		// Chama a rotina para exibir a tela de derrota
-	// 		StartCoroutine(StageManager.Instance.LoseCoroutine());
-	// 	}
-	// }
 
 	private void TurnJetpack(bool isOn)
 	{

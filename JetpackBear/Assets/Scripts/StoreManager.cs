@@ -98,6 +98,9 @@ public class StoreManager : MonoBehaviour {
 		// Verificar se tem moedas suficiente e exibir mensagem caso não possua
 		if(DataManager.Coins >= powerUp.Info.price)
 		{
+			// Toca som
+			SoundEffects.Instance.Play(SoundEffects.Instance.sfxCash);
+
 			// Remover valor do preço das moedas
 			coinPanel.RemoveCoins(powerUp.Info.price);
 			DataManager.Coins -= powerUp.Info.price;

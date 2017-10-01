@@ -9,6 +9,8 @@ public class SoundEffects : MonoBehaviour {
 	public AudioClip sfxPause;
 	public AudioClip sfxPickup;
 	public AudioClip sfxWin;
+	public AudioClip sfxCoin;
+	public AudioClip sfxCash;
 
 	[Header("UI")]
 	public AudioClip sfxUIActivation;

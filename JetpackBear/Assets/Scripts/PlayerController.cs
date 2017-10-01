@@ -200,7 +200,7 @@ public class PlayerController : MonoBehaviour {
 
 		if(other.CompareTag("Coin"))
 		{
-			SoundEffects.Instance.Play(SoundEffects.Instance.sfxPickup);
+			SoundEffects.Instance.Play(SoundEffects.Instance.sfxCoin);
 			StageManager.Instance.AddCoin();
 
 			Destroy(other.gameObject);

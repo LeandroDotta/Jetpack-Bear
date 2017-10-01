@@ -10,9 +10,12 @@ public class PlayerShield : MonoBehaviour {
 	[HideInInspector]
 	public PowerUp powerUp;
 
+	private AudioSource audioSource;
+
 	void Awake() 
 	{
 		anim = GetComponent<Animator>();
+		audioSource = GetComponent<AudioSource>();
 		powerUp = DataManager.GetPowerUpData(PowerUpId.Shield);
 	}
 
@@ -24,6 +27,8 @@ public class PlayerShield : MonoBehaviour {
 
 	public void Break()
 	{
+		audioSource.Play();
+
 		powerUp.units = 0;
 		DataManager.SetPowerUpData(powerUp);
 

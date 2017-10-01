@@ -138,6 +138,8 @@ MonoBehaviour:
   sfxPause: {fileID: 8300000, guid: aa0a1aa0728af4c47823552280dd07b9, type: 3}
   sfxPickup: {fileID: 8300000, guid: 0a9c5cb017d00ab41bb2c96bedf1f2b2, type: 3}
   sfxWin: {fileID: 8300000, guid: 4aaafdee4461b1c44b1fcdb564775394, type: 3}
+  sfxCoin: {fileID: 8300000, guid: 5a05a15161fe71f448699eb26cb8b7cb, type: 3}
+  sfxCash: {fileID: 8300000, guid: 4f43ab578924135449f0166d629bd834, type: 3}
   sfxUIActivation: {fileID: 8300000, guid: a910f2d05705b314a9b2d986a346a597, type: 3}
   sfxUINavigation: {fileID: 8300000, guid: b538802871b27f2429315f170e1b6bfb, type: 3}
   sfxUISlide: {fileID: 8300000, guid: 548526e0262bfe146b0696c19c41b665, type: 3}

@@ -9,10 +9,12 @@ public class ShootingPlant : MonoBehaviour
 	public GameObject projectilePrefab;
 
 	private Animator anim;
+	private AudioSource audioSource;
 
 	void Start()
 	{
 		anim = GetComponent<Animator>();
+		audioSource = GetComponent<AudioSource>();
 
 		StartCoroutine("ShootCoroutine");
 	}
@@ -45,5 +47,10 @@ public class ShootingPlant : MonoBehaviour
 		Gizmos.color = Color.red;
 
 		Gizmos.DrawLine(transform.position, new Vector2(transform.position.x + range*transform.localScale.x, transform.position.y));
+	}
+
+	public void PlayAudio()
+	{
+		audioSource.Play();
 	}
 }

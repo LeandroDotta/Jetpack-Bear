@@ -8,11 +8,14 @@ public class FlytrapPlant : MonoBehaviour
 
 	private bool attacking;
 	private Animator anim;
+	private AudioSource audioSource;
 	private Transform inside;
+
 
 	void Start()
 	{
 		anim = GetComponent<Animator>();
+		audioSource = GetComponent<AudioSource>();
 		inside = transform.Find("Body").Find("Inside");
 	}
 
@@ -73,4 +76,9 @@ public class FlytrapPlant : MonoBehaviour
 			AttackStart();
 		}
 	}
+
+	public void PlayAudio()
+	{
+		audioSource.Play();
+	}	
 }

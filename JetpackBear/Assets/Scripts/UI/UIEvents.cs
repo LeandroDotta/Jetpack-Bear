@@ -25,7 +25,6 @@ public class UIEvents : MonoBehaviour
 	{
 		string lastPlayedStage = DataManager.LastPlayedStage;
 
-		print(lastPlayedStage);
 		if(string.IsNullOrEmpty(lastPlayedStage))
 			LoadScene("Prologue");
 		else

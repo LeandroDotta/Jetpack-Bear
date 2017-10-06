@@ -17,7 +17,7 @@ public class StagePanel : MonoBehaviour {
 
 	private Color defaultColor;
 
-	void Start()
+	void Awake()
 	{
 		anim = GetComponent<Animator>();
 		rect = GetComponent<RectTransform>();

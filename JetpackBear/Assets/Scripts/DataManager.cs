@@ -10,6 +10,7 @@ public static class DataManager
 	public const string KEY_POWER_UP = "powerup_";
 	public const string KEY_POWERUP_SHIELD = "powerup_shield";
 	public const string KEY_POWERUP_MAGNET = "powerup_magnet";
+	public const string KEY_LAST_PLAYED_STAGE = "last_played_stage";
 
 	public static int Coins 
 	{ 
@@ -20,6 +21,20 @@ public static class DataManager
 		set
 		{
 			PlayerPrefs.SetInt(KEY_COINS, value);
+		} 
+	}
+
+	/// <summary>
+	/// 	Chave do último estágio jogado pelo usuário.
+	/// </summary>
+	public static string LastPlayedStage { 
+		get
+		{
+			return PlayerPrefs.GetString(KEY_LAST_PLAYED_STAGE, null);
+		} 
+		set
+		{
+			PlayerPrefs.SetString(KEY_LAST_PLAYED_STAGE, value);
 		} 
 	}
 

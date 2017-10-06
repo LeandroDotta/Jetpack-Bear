@@ -243,12 +243,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380374b1bd1fdcf4e866fc936a5d0870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage: {fileID: 11400000, guid: e37abdbb3e4b579419615c894a2c6a4c, type: 2}
+  stagePanel: {fileID: 0}
+  mapRegion: 0
   hive1: {fileID: 114693202007489842}
   hive2: {fileID: 114343210567609930}
   hive3: {fileID: 114987926003802250}
-  stage: {fileID: 11400000, guid: 336d3098eceed3146951edbb619b1322, type: 2}
-  disabledSprite: {fileID: 21300000, guid: 4d7787402f57ec04ca05f8b0fc2985f0, type: 3}
-  stagePanel: {fileID: 0}
 --- !u!114 &114517670971415114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -281,7 +281,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 049aed28c4525734d89f744e21e23f5b, type: 3}
-    m_FontSize: 75
+    m_FontSize: 52
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 0
 --- !u!114 &114690734831849750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.23529413, g: 0.1254902, b: 0.03529412, a: 1}
-  m_EffectDistance: {x: 4, y: 4}
+  m_EffectDistance: {x: 3, y: 3}
   m_UseGraphicAlpha: 0
 --- !u!114 &114743770189332140
 MonoBehaviour:
@@ -582,7 +582,7 @@ RectTransform:
   m_GameObject: {fileID: 1753973115010914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.09999997}
   m_Children:
   - {fileID: 224717764218596266}
   - {fileID: 224478364460524422}
@@ -593,9 +593,9 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1675, y: 0.6966666}
-  m_AnchorMax: {x: 0.1675, y: 0.6966666}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -50.81, y: 23.21}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224717764218596266

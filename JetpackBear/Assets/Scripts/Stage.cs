@@ -10,7 +10,7 @@ public class Stage : ScriptableObject
 	public string displayName;
 	public string scene;
 	public StageType type;
-	
+	public bool alwaysUnlocked;
 
 	public Stage nextStage;
 }

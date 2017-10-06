@@ -16,4 +16,5 @@ MonoBehaviour:
   displayName: Stage 1
   scene: Stage 1
   type: 0
+  alwaysUnlocked: 1
   nextStage: {fileID: 11400000, guid: 2c12c3d21fbf49f4193ff36e9e702a32, type: 2}

@@ -19,7 +19,17 @@ public class UIEvents : MonoBehaviour
 		{
 			SceneManager.LoadScene(name, LoadSceneMode.Additive);
 		}
-		
+	}
+
+	public void LoadLevelSelectionScene()
+	{
+		string lastPlayedStage = DataManager.LastPlayedStage;
+
+		print(lastPlayedStage);
+		if(string.IsNullOrEmpty(lastPlayedStage))
+			LoadScene("Prologue");
+		else
+			LoadScene("LevelSelection");
 	}
 
 	public void UnloadSceneAdditive(string name)

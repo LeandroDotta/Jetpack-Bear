@@ -60,6 +60,8 @@ public class StageManager : MonoBehaviour {
 
 		stageInfo = DataManager.LoadStageInfo(stage.key);
 		bear = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<PlayerController>();
+
+		AdManager.Instance.HideBanner();
 	}
 
 	void Update()
@@ -100,6 +102,7 @@ public class StageManager : MonoBehaviour {
 	void OnDestroy()
 	{
 		IsPaused = false;
+		AdManager.Instance.HideBanner();
 	}
 
 	public void AddHive()
@@ -135,6 +138,8 @@ public class StageManager : MonoBehaviour {
 
 		if(collectedHives != null)
 			collectedHives.Show();
+
+		AdManager.Instance.LoadBanner();
 	}
 
 	public IEnumerator WinCoroutine()
@@ -166,6 +171,8 @@ public class StageManager : MonoBehaviour {
 
 		if(OnWin != null)
 			OnWin();
+
+		AdManager.Instance.LoadBanner();
 	}
 
 	public void NextStage()

@@ -12,6 +12,9 @@ public static class DataManager
 	public const string KEY_POWERUP_MAGNET = "powerup_magnet";
 	public const string KEY_LAST_PLAYED_STAGE = "last_played_stage";
 
+	public delegate void SetCoinsAction(int amount);
+	public static event SetCoinsAction OnSetCoins;
+
 	public static int Coins 
 	{ 
 		get
@@ -21,6 +24,11 @@ public static class DataManager
 		set
 		{
 			PlayerPrefs.SetInt(KEY_COINS, value);
+
+			if(OnSetCoins != null)
+			{
+				OnSetCoins.Invoke(value);
+			}
 		} 
 	}
 

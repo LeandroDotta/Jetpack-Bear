@@ -24,6 +24,6 @@ public class ToggleText : MonoBehaviour {
 
 	private void ChangeText(bool on)
 	{
-		textTarget.text = on ? textOn : textOff;
+		textTarget.text = on ? Localization.currentLanguageStrings[textOn] : Localization.currentLanguageStrings[textOff];
 	}
 }

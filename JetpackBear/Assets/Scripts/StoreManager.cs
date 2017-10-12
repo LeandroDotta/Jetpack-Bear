@@ -114,7 +114,7 @@ public class StoreManager : MonoBehaviour {
 			DataManager.SetPowerUpData(powerUp);
 			
 			// Atualizar o botão da lista
-			UIStoreItem clickedItem = EventSystem.current.currentSelectedGameObject.transform.parent.parent.GetComponent<UIStoreItem>();
+			UIStoreItem clickedItem = EventSystem.current.currentSelectedGameObject.transform.parent.GetComponent<UIStoreItem>();
 			clickedItem.UpdateState(powerUp);
 
 			// Atualiza os powerups ativos

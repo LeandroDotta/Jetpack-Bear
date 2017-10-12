@@ -29,7 +29,7 @@ public class UIStoreItem : MonoBehaviour {
 	{
 		title.text = _info.title;
 		description.text = _info.description;
-		price.text = string.Format("PRICE: {0}", _info.price);
+		price.text = string.Format("{0}: {1}",Localization.currentLanguageStrings["price"], _info.price);
 		icon.sprite = _info.icon;
 	}
 

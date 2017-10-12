@@ -145,7 +145,7 @@ public class AdManager : MonoBehaviour
 	{
 		if(Application.internetReachability == NetworkReachability.NotReachable)
 		{
-			adManagerUI.SendMessage("OnAdFailedLoading", "Could not load the video. Check your connection or try later.", SendMessageOptions.DontRequireReceiver);
+			adManagerUI.SendMessage("OnAdFailedLoading", Localization.currentLanguageStrings["ad_no_connection"], SendMessageOptions.DontRequireReceiver);
 			return;
 		}
 

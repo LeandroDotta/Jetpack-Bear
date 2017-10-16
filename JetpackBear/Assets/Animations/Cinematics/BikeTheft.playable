@@ -12073,6 +12073,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114004586603320816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12088,7 +12089,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114942577995931130}
@@ -12142,7 +12142,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639869037
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -12195,7 +12194,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639869085
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -12248,7 +12246,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639869088
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -12313,7 +12310,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: 1645265185
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -12378,7 +12374,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846938
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -12443,7 +12438,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -12496,7 +12490,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -12539,6 +12532,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114061405184469544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12555,6 +12549,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114092311888229120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12581,7 +12576,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -12605,6 +12599,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114116736713061872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12620,7 +12615,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 74434896845427170}
   m_Parent: {fileID: 114942577995931130}
@@ -12651,6 +12645,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114189143797159660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12689,6 +12684,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114230111988994582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12704,7 +12700,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114093700906868830}
@@ -12768,7 +12763,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1
     m_Recordable: 1
     m_PostExtrapolationMode: 4
     m_PreExtrapolationMode: 1
@@ -12799,7 +12793,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114004586603320816}
@@ -12829,7 +12822,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -12851,7 +12843,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 74908767578290952}
   m_Parent: {fileID: 114542981655704640}
@@ -12882,6 +12873,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114316472446867614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12898,6 +12890,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114324643000188898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12924,7 +12917,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 74951011928783548}
   m_Parent: {fileID: 114004586603320816}
@@ -12954,7 +12946,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114680982175710124}
@@ -13018,7 +13009,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -13083,7 +13073,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1065085047
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -13114,7 +13103,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114564795618420680}
@@ -13178,7 +13166,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846942
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
@@ -13201,7 +13188,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114942577995931130}
@@ -13265,7 +13251,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -13297,6 +13282,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114390857318446904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13313,6 +13299,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114406286504916078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13340,6 +13327,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 0
 --- !u!114 &114409308531464548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13355,7 +13343,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114564795618420680}
@@ -13419,7 +13406,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -2061989544
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
@@ -13442,7 +13428,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114564795618420680}
@@ -13506,7 +13491,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -977757360
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -13571,7 +13555,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -546772436
     m_Recordable: 0
     m_PostExtrapolationMode: 4
     m_PreExtrapolationMode: 1
@@ -13603,6 +13586,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 0
 --- !u!114 &114450537095764718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13619,6 +13603,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114486800282467654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13635,6 +13620,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 0
 --- !u!114 &114491492598947610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13651,6 +13637,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114494275317947036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13666,7 +13653,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114564795618420680}
@@ -13730,7 +13716,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846944
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
@@ -13753,7 +13738,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114519668907866924}
@@ -13817,7 +13801,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846934
     m_Recordable: 0
     m_PostExtrapolationMode: 4
     m_PreExtrapolationMode: 1
@@ -13882,7 +13865,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846933
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -13947,7 +13929,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846940
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -14000,7 +13981,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846939
     m_Recordable: 0
     m_PostExtrapolationMode: 4
     m_PreExtrapolationMode: 1
@@ -14031,7 +14011,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114564795618420680}
@@ -14095,7 +14074,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846941
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
@@ -14160,7 +14138,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846948
     m_Recordable: 0
     m_PostExtrapolationMode: 4
     m_PreExtrapolationMode: 1
@@ -14191,7 +14168,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114004586603320816}
@@ -14255,7 +14231,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846943
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 0
@@ -14286,7 +14261,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -14309,6 +14283,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 0
 --- !u!114 &114542981655704640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14324,7 +14299,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -14347,7 +14321,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114564795618420680}
@@ -14411,7 +14384,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -459828392
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
@@ -14434,7 +14406,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114701777375169274}
@@ -14498,7 +14469,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639849039
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
@@ -14521,7 +14491,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114942577995931130}
@@ -14550,6 +14519,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114589119044578320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14565,7 +14535,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 74094698374254184}
   m_Parent: {fileID: 114253659223788662}
@@ -14596,6 +14565,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 0
 --- !u!114 &114597294339632886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14611,7 +14581,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114564795618420680}
@@ -14675,7 +14644,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: 787465962
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
@@ -14698,7 +14666,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 74204862536700228}
   m_Parent: {fileID: 114093700906868830}
@@ -14728,7 +14695,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114004586603320816}
@@ -14758,7 +14724,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -14781,7 +14746,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -14803,7 +14767,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114004586603320816}
@@ -14834,6 +14797,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 0
 --- !u!114 &114732119867062040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14861,6 +14825,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 0
 --- !u!114 &114754725662816666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14876,7 +14841,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114542981655704640}
@@ -14940,7 +14904,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639846937
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
@@ -14963,7 +14926,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 60
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114680982175710124}
@@ -15027,7 +14989,6 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639868545
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
@@ -15050,7 +15011,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114519668907866924}
@@ -15072,7 +15032,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 74656946446634552}
   m_Parent: {fileID: 114942577995931130}
@@ -15103,6 +15062,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 0
 --- !u!114 &114841169631921034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15119,6 +15079,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114848507306732202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15135,6 +15096,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114856711506130886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15150,7 +15112,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114004586603320816}
@@ -15181,6 +15142,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114887178751214012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15197,6 +15159,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114887881396253958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15234,7 +15197,6 @@ MonoBehaviour:
   m_Muted: 0
   m_Soloed: 0
   m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -15261,6 +15223,7 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
 --- !u!114 &114977145215137856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15277,3 +15240,4 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1

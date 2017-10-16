@@ -49,6 +49,7 @@ to_restart=TO RESTART
 to_pause=TO PAUSE
 hives_instructions=GO FOR THE HIVES IF YOU'RE UP FOR MORE CHALLENGES
 no_coins_info=Insuficient Coins to buy this item.
+end_episode_1=END OF EPISODE 1
 
 ad_no_connection=Could not load the video. Check your connection or try later
 ad_watch_confirmation_shield=Do you want to watch a video to get a free shield?

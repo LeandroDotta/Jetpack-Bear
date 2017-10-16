@@ -49,6 +49,7 @@ to_restart=PARA REINICIAR
 to_pause=PARA PAUSAR
 hives_instructions=TENTE PEGAR AS COLMEIAS SE QUISER MAIS DESAFIOS
 no_coins_info=Você não tem moedas suficiente para comprar.
+end_episode_1=FIM DO EPISÓDIO 1
 
 ad_no_connection=Não foi possível carregar o vídeo. Verifique sua conexão
 ad_watch_confirmation_shield=Deseja assistir um vídeo para ganhar um escudo?

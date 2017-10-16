@@ -62,6 +62,8 @@ public class StoreManager : MonoBehaviour {
 	void Start()
 	{
 		backButton.Select();
+
+		AdManager.Instance.HideBanner();
 	}
 
 	// Atualiza a lista de powerups adquiridos pelo jogador.

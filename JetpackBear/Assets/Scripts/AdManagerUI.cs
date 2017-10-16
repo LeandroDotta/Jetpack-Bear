@@ -35,6 +35,11 @@ public class AdManagerUI : MonoBehaviour
 		AdManager.Instance.LoadAdVideo(AdManager.AD_EXTRA_COINS, this.gameObject);
 	}
 
+	public void CancelVideoLoading()
+	{
+		AdManager.Instance.CancelAdVideo();
+	}
+
 	private void OnAdRewarded(Reward reward)
 	{
 		string type = reward.Type;
@@ -45,7 +50,7 @@ public class AdManagerUI : MonoBehaviour
 			coinsPanel.AddCoins((int)amount);
 		}
 
-		textInfo.text = "Reward Recieved!";
+		textInfo.text = Localization.currentLanguageStrings["reward_recieved"];
 		dialogInfo.SetActive(true);
 	}
 

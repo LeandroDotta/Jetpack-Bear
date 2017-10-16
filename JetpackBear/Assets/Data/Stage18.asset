@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdf9c8470534a664089e788b3937399b, type: 3}
-  m_Name: Stage17
+  m_Name: Stage18
   m_EditorClassIdentifier: 
-  number: 17
-  key: stage17
-  displayName: Stage 17
-  scene: Stage 17
+  number: 18
+  key: stage18
+  displayName: Stage 18
+  scene: Stage 18
   type: 0
   alwaysUnlocked: 0
-  nextStage: {fileID: 11400000, guid: 23325dc6ea27f0d469fc268878395110, type: 2}
+  nextStage: {fileID: 11400000, guid: ee4d7205a43d6984bab420ba1710d950, type: 2}

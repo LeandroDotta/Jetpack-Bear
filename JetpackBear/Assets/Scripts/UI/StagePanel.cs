@@ -30,7 +30,7 @@ public class StagePanel : MonoBehaviour {
 	{
 		rect.anchoredPosition = startPos;
 
-		textName.text = stage.displayName;
+		textName.text = Localization.currentLanguageStrings[stage.displayName];
 
 		if(stage.type == StageType.Normal)
 		{

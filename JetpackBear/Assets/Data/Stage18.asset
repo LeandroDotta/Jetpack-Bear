@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 18
   key: stage18
-  displayName: Stage 18
+  displayName: stage_title_18
   scene: Stage 18
   type: 0
   alwaysUnlocked: 0

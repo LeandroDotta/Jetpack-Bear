@@ -20,9 +20,6 @@ public class AdManagerUI : MonoBehaviour
 
 	void Start()
 	{
-		btnCancelLoading.onClick.AddListener(() =>{
-			AdManager.Instance.CancelAdVideo();
-		});
 	}
 
 	public void LoadAdVideoShield()

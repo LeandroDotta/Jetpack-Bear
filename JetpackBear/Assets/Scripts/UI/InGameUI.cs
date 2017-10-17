@@ -31,7 +31,7 @@ public class InGameUI : MonoBehaviour
 		StageManager.Instance.OnLose += ShowLoseScreen;
 		StageManager.Instance.OnWin += ShowWinScreen;
 
-		stageName.text = StageManager.Instance.stage.displayName;
+		stageName.text = Localization.currentLanguageStrings[StageManager.Instance.stage.displayName];
 	}
 
 	public void ShowPauseScreen()

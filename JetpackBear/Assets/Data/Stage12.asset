@@ -13,7 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 12
   key: stage12
-  displayName: Stage 12
+  displayName: stage_title_12
   scene: Stage 12
   type: 0
+  alwaysUnlocked: 0
   nextStage: {fileID: 11400000, guid: f6e9df7fbe75ac84ebfe449e1451ca33, type: 2}

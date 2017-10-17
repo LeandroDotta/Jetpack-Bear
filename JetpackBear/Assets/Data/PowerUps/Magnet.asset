@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Name: Magnet
   m_EditorClassIdentifier: 
   id: 2
-  title: MAGNET
-  description: "Um \xEDm\xE3 para ser acoplado na mochila jato e aumentar seus lucros!\r\nQuando
-    equipado, o \xEDm\xE3 atrai as moedas pr\xF3ximas ao jogador. Cada item adquirido
-    pode ser utilizado apenas uma vez e quando a fase \xE9 conclu\xEDda ele \xE9 removido\r."
+  title: powerup_title_magnet
+  description: powerup_description_magnet
   price: 50
   icon: {fileID: 21300000, guid: 093fc7972323e99449306fce3144f1c1, type: 3}
   isAccumulative: 1

@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   id: 1
-  title: SHIELD
-  description: "Um escudo de energia que garante prote\xE7\xE3o extra para o urso.\r\nQuando
-    o jogador receber dano, o escudo \xE9 destru\xEDdo, dando uma chance extra durante
-    o percurso.\r"
+  title: powerup_title_shield
+  description: powerup_description_shield
   price: 150
   icon: {fileID: 21300000, guid: 679050828a3d4d849b78b32e1db0eaae, type: 3}
   isAccumulative: 0

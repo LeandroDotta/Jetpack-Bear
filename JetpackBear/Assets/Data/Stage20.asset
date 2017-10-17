@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 20
   key: stage20
-  displayName: Stage 20
+  displayName: stage_title_20
   scene: Stage 20
   type: 0
   alwaysUnlocked: 0

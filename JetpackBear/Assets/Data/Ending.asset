@@ -11,8 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdf9c8470534a664089e788b3937399b, type: 3}
   m_Name: Ending
   m_EditorClassIdentifier: 
+  number: 0
   key: ending
-  displayName: The End
+  displayName: stage_title_ending
   scene: EndScreen
   type: 1
-  nextStages: []
+  alwaysUnlocked: 0
+  nextStage: {fileID: 0}

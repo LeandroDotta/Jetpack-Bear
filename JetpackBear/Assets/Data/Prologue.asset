@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 0
   key: prologue
-  displayName: Prologue
+  displayName: stage_title_prologue
   scene: Prologue
   type: 1
   alwaysUnlocked: 1

@@ -27,8 +27,8 @@ public class UIStoreItem : MonoBehaviour {
 
 	public void UpdateInfo()
 	{
-		title.text = _info.title;
-		description.text = _info.description;
+		title.text = Localization.currentLanguageStrings[_info.title];
+		description.text = Localization.currentLanguageStrings[_info.description];
 		price.text = string.Format("{0}: {1}",Localization.currentLanguageStrings["price"], _info.price);
 		icon.sprite = _info.icon;
 	}

@@ -23,11 +23,6 @@ public class WorldMap : MonoBehaviour
 		SelectedStageKey = DataManager.LastPlayedStage;
 	}
 
-	void Start()
-	{
-		MusicManager.Instance.SetDefaultMusic();
-	}
-
 	void Update()
 	{
 		if(Input.GetKeyDown(KeyCode.Alpha1))

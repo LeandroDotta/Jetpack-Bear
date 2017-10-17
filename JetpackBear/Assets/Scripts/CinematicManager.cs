@@ -9,5 +9,7 @@ public class CinematicManager : MonoBehaviour {
 	void Start()
 	{
 		DataManager.LastPlayedStage = stage.key;
+
+		MusicManager.Instance.SetMusic(stage.music);
 	}
 }

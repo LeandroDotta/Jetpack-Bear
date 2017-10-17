@@ -61,6 +61,8 @@ public class StageManager : MonoBehaviour {
 		stageInfo = DataManager.LoadStageInfo(stage.key);
 		bear = GameObject.FindGameObjectWithTag("Player").transform.GetComponent<PlayerController>();
 
+		MusicManager.Instance.SetMusic(stage.music);
+
 		AdManager.Instance.HideBanner();
 	}
 

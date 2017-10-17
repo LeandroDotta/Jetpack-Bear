@@ -13,6 +13,7 @@ public class Stage : ScriptableObject
 	public bool alwaysUnlocked;
 
 	public Stage nextStage;
+	public AudioClip music;
 }
 
 [Serializable]

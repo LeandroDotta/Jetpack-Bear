@@ -5421,6 +5421,12 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212146765986805604, guid: 6a27bc78b04b50144b22144924cd5a24,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06448fb9123c2794ab5f846490c0e59a,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a27bc78b04b50144b22144924cd5a24, type: 2}
   m_IsPrefabParent: 0

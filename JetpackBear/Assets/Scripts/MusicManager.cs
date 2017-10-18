@@ -25,23 +25,17 @@ public class MusicManager : MonoBehaviour
 		audioSource = GetComponent<AudioSource>();
 	}
 
-	public void SetDefaultMusic()
-	{
-		if(!CheckCurrentClip(defaultMusic))
-		{
-			SetMusic(defaultMusic);
-		}
-	}
-
 	public void SetMusic(AudioClip clip)
 	{
-		audioSource.clip = clip;
-		audioSource.Play();
+		if(!CheckCurrentClip(clip))
+		{
+			audioSource.clip = clip;
+			audioSource.Play();
+		}
 	}
 
 	public bool CheckCurrentClip(AudioClip clip)
 	{
-		print(audioSource.clip.name);
 		return audioSource.clip.name == clip.name;
 	}
 }

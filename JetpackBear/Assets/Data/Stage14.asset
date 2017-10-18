@@ -18,4 +18,4 @@ MonoBehaviour:
   type: 0
   alwaysUnlocked: 0
   nextStage: {fileID: 11400000, guid: af67944c4d6b367439648baaadf08d5f, type: 2}
-  music: {fileID: 8300000, guid: 92120ad7d1b4f894e83decaea740f8ff, type: 3}
+  music: {fileID: 8300000, guid: 6ee3f2affe31fc34793f99f6249be248, type: 3}

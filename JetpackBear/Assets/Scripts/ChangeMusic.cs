@@ -8,9 +8,6 @@ public class ChangeMusic : MonoBehaviour
 
 	void Start()
 	{
-		if(!MusicManager.Instance.CheckCurrentClip(music))
-		{
-			MusicManager.Instance.SetMusic(music);
-		}
+		MusicManager.Instance.SetMusic(music);
 	}
 }

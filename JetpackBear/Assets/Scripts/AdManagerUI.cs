@@ -53,12 +53,16 @@ public class AdManagerUI : MonoBehaviour
 
 	private void OnAdVideoLoading()
 	{
-		loadingPanel.SetActive(true);
+		//loadingPanel.SetActive(true);
+		LoadingScreen.Instance.Show(cancelAction: () => {
+			AdManager.Instance.CancelAdVideo();
+		});
 	}
 
 	private void OnAdVideoStarted()
 	{
-		loadingPanel.SetActive(false);
+		// loadingPanel.SetActive(false);
+		LoadingScreen.Instance.Hide();
 	}
 
 	private void OnAdFailedLoading(string message)
@@ -66,6 +70,7 @@ public class AdManagerUI : MonoBehaviour
 		textInfo.text = message;
 		dialogInfo.SetActive(true);
 
-		loadingPanel.SetActive(false);
+		// loadingPanel.SetActive(false);
+		LoadingScreen.Instance.Hide();
 	}
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour 
 {
@@ -35,5 +36,19 @@ public class GameManager : MonoBehaviour
 
 		PlayerPrefs.SetFloat(AudioControl.KEY_SFX, sfxVol);
 		PlayerPrefs.SetFloat(AudioControl.KEY_MUSIC, musicVol);
+	}
+
+	public IEnumerator LoadSceneAsyncCoroutine(string sceneName)
+	{
+		LoadingScreen.Instance.Show();
+		AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+		operation.completed += (handler) => {
+			LoadingScreen.Instance.Hide();
+		};
+		
+		while(!operation.isDone)
+		{
+			yield return null;
+		}
 	}
 }

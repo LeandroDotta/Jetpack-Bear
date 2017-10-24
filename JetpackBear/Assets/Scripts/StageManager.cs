@@ -180,7 +180,7 @@ public class StageManager : MonoBehaviour {
 	public void NextStage()
 	{
 		DataManager.LastPlayedStage = stage.nextStage.key;
-		SceneManager.LoadScene(stage.nextStage.scene);
+		StartCoroutine(GameManager.Instance.LoadSceneAsyncCoroutine(stage.nextStage.scene));
 	}
 
 	public void RestartStage()

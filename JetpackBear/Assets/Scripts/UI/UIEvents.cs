@@ -10,6 +10,11 @@ public class UIEvents : MonoBehaviour
 		SceneManager.LoadScene(name);
 	}
 
+	public void LoadSceneAsync(string name)
+	{
+		StartCoroutine(GameManager.Instance.LoadSceneAsyncCoroutine(name));
+	}
+
 	public void LoadSceneAdditive(string name)
 	{
 		Scene scene = SceneManager.GetSceneByName(name);
@@ -26,9 +31,9 @@ public class UIEvents : MonoBehaviour
 		string lastPlayedStage = DataManager.LastPlayedStage;
 
 		if(string.IsNullOrEmpty(lastPlayedStage))
-			LoadScene("Prologue");
+			StartCoroutine(GameManager.Instance.LoadSceneAsyncCoroutine("Prologue")); // LoadScene("Prologue");
 		else
-			LoadScene("LevelSelection");
+			StartCoroutine(GameManager.Instance.LoadSceneAsyncCoroutine("LevelSelection")); // LoadScene("LevelSelection");
 	}
 
 	public void UnloadSceneAdditive(string name)

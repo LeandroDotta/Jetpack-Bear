@@ -133,3 +133,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbd54e58471f9d448b45eb8e7b2ce1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultMusic: {fileID: 8300000, guid: 92120ad7d1b4f894e83decaea740f8ff, type: 3}

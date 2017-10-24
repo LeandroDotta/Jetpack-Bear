@@ -76,7 +76,8 @@ public class StageButton : MonoBehaviour, ISelectHandler, IPointerEnterHandler {
 	public void LoadStage()
 	{
 		DataManager.LastPlayedStage = stage.key;
-		SceneManager.LoadScene(stage.scene);
+
+		StartCoroutine(GameManager.Instance.LoadSceneAsyncCoroutine(stage.scene));
 	}
 
     public void OnSelect(BaseEventData eventData)

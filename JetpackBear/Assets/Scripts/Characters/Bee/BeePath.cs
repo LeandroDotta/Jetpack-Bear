@@ -11,7 +11,7 @@ public class BeePath : BeeObject {
 	private bool forward;
 	private Transform[] points;
 
-    protected void Start () 
+    protected override void Start () 
 	{
 		base.Start();
 

@@ -7,7 +7,7 @@ public class BeeFollow : BeeObject {
 	public LayerMask targetLayer;
 	public float range;
 
-	protected void Start()
+	protected override void Start()
 	{
 		base.Start();
 	}

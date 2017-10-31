@@ -10,9 +10,6 @@ public class ShootingPlantProjectile : MonoBehaviour
 
 	private bool moving = true;
 
-	private Collider2D coll;
-	private Collider2D trigger;
-
 	private Vector2 startPosition;
 	private Animator anim;
 	private Rigidbody2D rb2d;
@@ -35,9 +32,6 @@ public class ShootingPlantProjectile : MonoBehaviour
 
 		anim = GetComponent<Animator>();
 		rb2d = GetComponent<Rigidbody2D>();
-
-		coll = transform.Find("Collider").GetComponent<Collider2D>();
-		trigger = transform.Find("Trigger").GetComponent<Collider2D>();
 	}
 
 	void OnCollisionEnter2D(Collision2D other)

@@ -67,10 +67,10 @@ public class PlayerController : MonoBehaviour {
 		if(holdFly)
 			rb2d.AddForce(Vector2.up * flyForce);
 
-		if(axisHorizontal != 0);
+		if(axisHorizontal != 0)
 			rb2d.AddForce(new Vector2(axisHorizontal * moveForce, 0));	
 
-		if(accelerationX != 0);
+		if(accelerationX != 0)
 			rb2d.AddForce(new Vector2(accelerationX * (moveForce*2), 0));	
 
 

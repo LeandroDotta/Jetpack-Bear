@@ -8,7 +8,7 @@ public abstract class BeeObject : MonoBehaviour {
 
 	protected Transform beeObj;
 	
-	protected void Start () 
+	protected virtual void Start () 
 	{
 		beeObj = transform.Find("BeeObj");
 	}

@@ -6,9 +6,6 @@ using UnityEngine.SceneManagement;
 public class StageManager : MonoBehaviour {
 	public Stage stage;
 	
-
-	public UICollectedHives collectedHives;
-	
 	private StageInfo stageInfo;
 
 	[HideInInspector]
@@ -45,6 +42,12 @@ public class StageManager : MonoBehaviour {
 	public delegate void WinAction();
 	public event WinAction OnWin;
 
+	public delegate void AddedCoinAction(int coins);
+	public event AddedCoinAction OnAddedCoin;
+	
+	public delegate void AddedHiveAction(int hiveCoint);
+	public event AddedHiveAction OnAddedHive;
+
 	void Awake()
 	{
 		if (Instance == null)
@@ -79,10 +82,6 @@ public class StageManager : MonoBehaviour {
 
 		if(OnPause != null)
 			OnPause();
-	
-
-		if(collectedHives != null)
-			collectedHives.Show();
 
 		SoundEffects.Instance.Play(SoundEffects.Instance.sfxPause);
 	}
@@ -94,9 +93,6 @@ public class StageManager : MonoBehaviour {
 
 		if(OnResume != null)
 			OnResume();
-
-		if(collectedHives != null)
-			collectedHives.HideAfter(3f);
 
 		SoundEffects.Instance.Play(SoundEffects.Instance.sfxUISlide);
 	}
@@ -111,16 +107,16 @@ public class StageManager : MonoBehaviour {
 	{
 		CollectedHiveCount++;
 		
-		if(collectedHives != null)
-		{
-			collectedHives.SetHives(CollectedHiveCount);
-			collectedHives.ShowForSeconds(3f);
-		}
+		if(OnAddedHive != null)
+			OnAddedHive.Invoke(CollectedHiveCount);
 	}
 
 	public void AddCoin()
 	{
 		CollectedCoins++;
+
+		if(OnAddedCoin != null)
+			OnAddedCoin.Invoke(CollectedCoins);
 	}
 
 	public void Lose()
@@ -137,9 +133,6 @@ public class StageManager : MonoBehaviour {
 
 		if(OnLose != null)
 			OnLose();
-
-		if(collectedHives != null)
-			collectedHives.Show();
 
 		AdManager.Instance.LoadBanner();
 	}

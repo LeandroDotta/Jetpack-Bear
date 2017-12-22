@@ -3,34 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UICollectedHives : MonoBehaviour 
+public class UICollectedCoins : MonoBehaviour 
 {
-	private bool isShowing;
-	private Image hive1;
-	private Image hive2;
-	private Image hive3;
-
-	private Color defaultColor;
+	public Text textCoins;
 	private Animator anim;
-	
+
 	private bool showing;
 
-	void Start()
+	private void Start() 
 	{
 		anim = GetComponent<Animator>();
-
-		hive1 = transform.Find("Hive1").GetComponent<Image>();
-		hive2 = transform.Find("Hive2").GetComponent<Image>();
-		hive3 = transform.Find("Hive3").GetComponent<Image>();
-
-		defaultColor = hive1.color;
+		textCoins.text = "0";
 	}
 
 	private void OnEnable() 
 	{
 		if(StageManager.Instance != null)
 		{
-			StageManager.Instance.OnAddedHive += SetHives;
+			StageManager.Instance.OnAddedCoin += SetCoins;
 			StageManager.Instance.OnLose += Show;
 			StageManager.Instance.OnPause += Show;
 			StageManager.Instance.OnResume += Hide;
@@ -42,7 +32,7 @@ public class UICollectedHives : MonoBehaviour
 	{
 		if(StageManager.Instance != null)
 		{
-			StageManager.Instance.OnAddedHive -= SetHives;
+			StageManager.Instance.OnAddedCoin -= SetCoins;
 			StageManager.Instance.OnLose -= Show;
 			StageManager.Instance.OnPause -= Show;
 			StageManager.Instance.OnResume -= Hide;
@@ -50,12 +40,9 @@ public class UICollectedHives : MonoBehaviour
 		}
 	}
 
-	public void SetHives(int hiveCount)
+	public void SetCoins(int coins)
 	{
-		hive1.color = hiveCount >= 1 ? Color.white : defaultColor;
-		hive2.color = hiveCount >= 2 ? Color.white : defaultColor;
-		hive3.color = hiveCount >= 3 ? Color.white : defaultColor;
-
+		textCoins.text = coins.ToString();
 		ShowForSeconds(3f);
 	}
 

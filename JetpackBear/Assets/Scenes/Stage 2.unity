@@ -905,13 +905,13 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 11, y: 3, z: 0}
     second:
-      m_TileIndex: 6
+      m_TileIndex: 8
       m_TileSpriteIndex: 12
-      m_TileMatrixIndex: 0
+      m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
-      m_ColliderType: 0
+      m_ColliderType: 1
   - first: {x: 23, y: 3, z: 0}
     second:
       m_TileIndex: 13
@@ -1196,12 +1196,12 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 66d7560e2ebefba4790b07ebf1c04c7e, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 6eb59d0af82fcbe46927f9020f386e2f, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+    m_Data: {fileID: 11400000, guid: 3448923d71d5c79428fe100890c50250, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 062d490acc45a97418e740745d725438, type: 2}
   - m_RefCount: 2
@@ -1238,11 +1238,11 @@ Tilemap:
   - m_RefCount: 6
     m_Data: {fileID: 21300290, guid: c5be79baacde38042ac4d278286386a6, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 21300236, guid: fe38cbba31ee54c439af8659b54908cd, type: 3}
+    m_Data: {fileID: 21300254, guid: c5be79baacde38042ac4d278286386a6, type: 3}
   - m_RefCount: 48
     m_Data: {fileID: 21300348, guid: c5be79baacde38042ac4d278286386a6, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 7
+  - m_RefCount: 6
     m_Data:
       e00: -1
       e01: 0
@@ -1260,7 +1260,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 79
+  - m_RefCount: 80
     m_Data:
       e00: 1
       e01: 0
@@ -1281,6 +1281,8 @@ Tilemap:
   m_TileColorArray:
   - m_RefCount: 86
     m_Data: {r: 1, g: 1, b: 1, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 1.57e-43, g: 0, b: 4.011735, a: 1e-45}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -8, y: -6, z: 0}
@@ -1318,7 +1320,7 @@ Tilemap:
   - serializedVersion: 1
     m_DirtyIndex: 0
   - serializedVersion: 1
-    m_DirtyIndex: 0
+    m_DirtyIndex: 1
   - serializedVersion: 1
     m_DirtyIndex: 0
   - serializedVersion: 1

@@ -771,10 +771,9 @@ Transform:
   - {fileID: 500295000}
   - {fileID: 799832780}
   - {fileID: 179320055}
-  - {fileID: 1148359206}
-  - {fileID: 1296899742}
-  - {fileID: 660776365}
   - {fileID: 811588224}
+  - {fileID: 1148359206}
+  - {fileID: 660776365}
   - {fileID: 1882351654}
   - {fileID: 1044029440}
   - {fileID: 1434787157}
@@ -783,6 +782,7 @@ Transform:
   - {fileID: 1492542536}
   - {fileID: 382928755}
   - {fileID: 363293620}
+  - {fileID: 1296899742}
   - {fileID: 700482960}
   - {fileID: 737981174}
   - {fileID: 1144584685}
@@ -818,7 +818,7 @@ TilemapRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 64769355}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -857,7 +857,7 @@ Tilemap:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 64769355}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Tiles: {}
   m_AnimatedTiles: {}
   m_TileAssetArray: []
@@ -43926,7 +43926,7 @@ Prefab:
     - target: {fileID: 224061985790781160, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224392449691828342, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
@@ -43946,7 +43946,7 @@ Prefab:
     - target: {fileID: 224392449691828342, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224109841752165958, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
@@ -43966,7 +43966,7 @@ Prefab:
     - target: {fileID: 224109841752165958, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1904432495771978, guid: 55ff752a4f5c944428a6c79397130264, type: 2}
       propertyPath: m_IsActive
@@ -44005,7 +44005,7 @@ Prefab:
     - target: {fileID: 224404512180139828, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224012860263510302, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
@@ -44025,7 +44025,7 @@ Prefab:
     - target: {fileID: 224012860263510302, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224023530199775910, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
@@ -44045,7 +44045,7 @@ Prefab:
     - target: {fileID: 224023530199775910, guid: 55ff752a4f5c944428a6c79397130264,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -65
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55ff752a4f5c944428a6c79397130264, type: 2}

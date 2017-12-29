@@ -5390,8 +5390,8 @@ Transform:
   - {fileID: 1761082553}
   - {fileID: 667168084}
   - {fileID: 1231578126}
-  - {fileID: 499404320}
   - {fileID: 1614149947}
+  - {fileID: 499404320}
   - {fileID: 1720785506}
   - {fileID: 1748470268}
   - {fileID: 1496618773}
@@ -5417,7 +5417,7 @@ TilemapRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 821677346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -5456,7 +5456,7 @@ Tilemap:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 821677346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Tiles: {}
   m_AnimatedTiles: {}
   m_TileAssetArray: []

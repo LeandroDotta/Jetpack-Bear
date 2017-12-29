@@ -6297,7 +6297,7 @@ Tilemap:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1198770468}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Tiles: {}
   m_AnimatedTiles: {}
   m_TileAssetArray: []

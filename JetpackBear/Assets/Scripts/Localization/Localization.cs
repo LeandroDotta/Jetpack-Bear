@@ -15,6 +15,11 @@ public class Localization : MonoBehaviour
 		LoadStrings(Application.systemLanguage);
 	}
 
+	public static void LoadStrings()
+	{
+		LoadStrings(Application.systemLanguage);
+	}
+
 	public static void LoadStrings(SystemLanguage language)
 	{
 		Debug.Log("Carregando Strings para: " + language.ToString());

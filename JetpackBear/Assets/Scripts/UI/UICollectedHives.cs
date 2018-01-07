@@ -5,15 +5,12 @@ using UnityEngine.UI;
 
 public class UICollectedHives : MonoBehaviour 
 {
-	private bool isShowing;
 	private Image hive1;
 	private Image hive2;
 	private Image hive3;
 
 	private Color defaultColor;
 	private Animator anim;
-	
-	private bool showing;
 
 	void Start()
 	{
@@ -64,7 +61,6 @@ public class UICollectedHives : MonoBehaviour
 		StopAllCoroutines();
 
 		anim.SetBool("show", true);
-		showing = true;
 	}
 
 	public void Hide()
@@ -72,7 +68,6 @@ public class UICollectedHives : MonoBehaviour
 		StopAllCoroutines();
 
 		anim.SetBool("show", false);
-		showing = false;
 	}
 
 	public void ShowForSeconds(float seconds)

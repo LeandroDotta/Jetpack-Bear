@@ -8,8 +8,6 @@ public class UICollectedCoins : MonoBehaviour
 	public Text textCoins;
 	private Animator anim;
 
-	private bool showing;
-
 	private void Start() 
 	{
 		anim = GetComponent<Animator>();
@@ -51,7 +49,6 @@ public class UICollectedCoins : MonoBehaviour
 		StopAllCoroutines();
 
 		anim.SetBool("show", true);
-		showing = true;
 	}
 
 	public void Hide()
@@ -59,7 +56,6 @@ public class UICollectedCoins : MonoBehaviour
 		StopAllCoroutines();
 
 		anim.SetBool("show", false);
-		showing = false;
 	}
 
 	public void ShowForSeconds(float seconds)

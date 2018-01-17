@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class StageManager : MonoBehaviour {
 	public Stage stage;
-	
+
 	private StageInfo stageInfo;
 
 	[HideInInspector]

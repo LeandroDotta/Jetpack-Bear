@@ -11,6 +11,7 @@ press=PRESS
 price=PRICE
 back=BACK
 tilt=TILT
+to_tilt=TILT
 buy=BUY
 yes=YES
 no=NO
@@ -34,6 +35,7 @@ victory=VICTORY!
 power_ups=POWER UPS
 your_power_ups=YOUR POWER UPS
 next_stage=NEXT STAGE
+controls=CONTROLS
 
 any_key_to_return=press any key to return
 any_key_to_continue=PRESS ANY KEY TO CONTINUE
@@ -83,3 +85,6 @@ stage_title_19=Stage 19
 stage_title_20=Stage 20
 stage_title_prologue=Prologue
 stage_title_ending=The End
+
+buttons_boost_left=BUTTONS\nBOOST AT LEFT
+buttons_boost_right=BUTTONS\nBOOST AT RIGHT

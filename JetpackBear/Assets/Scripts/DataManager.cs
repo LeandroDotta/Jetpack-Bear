@@ -35,7 +35,8 @@ public static class DataManager
 	/// <summary>
 	/// 	Chave do último estágio jogado pelo usuário.
 	/// </summary>
-	public static string LastPlayedStage { 
+	public static string LastPlayedStage 
+	{ 
 		get
 		{
 			return PlayerPrefs.GetString(KEY_LAST_PLAYED_STAGE, null);

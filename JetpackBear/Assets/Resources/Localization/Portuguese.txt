@@ -11,6 +11,7 @@ press=PRESSIONE
 price=PREÇO
 back=VOLTAR
 tilt=INCLINE
+to_tilt=INCLINAR
 buy=COMPRAR
 yes=SIM
 no=NÃO
@@ -34,6 +35,7 @@ victory=VITÓRIA!
 power_ups=PODERES
 your_power_ups=SEUS PODERES
 next_stage=PRÓXIMO
+controls=CONTROLES
 
 any_key_to_return=pressione algo para voltar
 any_key_to_continue=PRESSIONE ALGO PARA CONTINUAR
@@ -83,3 +85,6 @@ stage_title_19=Estàgio 19
 stage_title_20=Estàgio 20
 stage_title_prologue=Prólogo
 stage_title_ending=Fim
+
+buttons_boost_left=BOTÕES\nMODO 1
+buttons_boost_right=BOTÕES\nMODO 2

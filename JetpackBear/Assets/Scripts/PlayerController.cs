@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Playables;
 
 public class PlayerController : MonoBehaviour {
@@ -78,10 +79,25 @@ public class PlayerController : MonoBehaviour {
 		Anim.SetFloat("velocityY", rb2d.velocity.y);
 	}
 
-	void Update () {
-		holdFly = Input.GetButton("Fly") || Input.GetAxisRaw("Vertical") == 1 || Input.GetMouseButton(0);
+	void Update () 
+	{
+		#if UNITY_ANDROID || UNITY_IOS
+		if(SettingsManager.MobileControl == MobileControlMode.Tilt)
+		{
+			holdFly = Input.GetMouseButton(0);
+			accelerationX = Input.acceleration.x;
+		}
+		else
+		{
+			if(accelerationX != 0)
+				accelerationX = 0;
+			holdFly = MobileInputManager.GetAxis("Vertical") == 1;
+			axisHorizontal = MobileInputManager.GetAxis("Horizontal");
+		}
+		#else
+		holdFly = Input.GetButton("Fly") || Input.GetAxisRaw("Vertical") == 1;
 		axisHorizontal = Input.GetAxis("Horizontal");
-		accelerationX = Input.acceleration.x;
+		#endif
 
 		TurnJetpack(holdFly);
 

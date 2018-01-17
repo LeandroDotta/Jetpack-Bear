@@ -11,18 +11,31 @@ public class InGameUI : MonoBehaviour
 	public RectTransform winPanel;
 	
 	public Text stageName;
-	
-	// public RectTransform messagePanel;
-	// public Text textCenterMessage;
-	// public Button btnResume;
-	// public Button btnNextStage;
 
 	[Header("Hives")]
 	public Image hive1;
 	public Image hive2;
 	public Image hive3;
 
+	[Header("Mobile")]
+	public GameObject mobileControlsPrefab;
+	private UIMobileControls mobileControls;
+
 	private Color32 transparentBlack = new Color32(0, 0, 0, 100);
+
+	private void OnEnable() 
+	{
+		#if UNITY_ANDROID || UNITY_IOS
+		SettingsManager.OnChangeMobileControl += OnChangeMobileControl;
+		#endif
+	}
+
+	private void OnDisable() 
+	{
+		#if UNITY_ANDROID || UNITY_IOS
+		SettingsManager.OnChangeMobileControl -= OnChangeMobileControl;
+		#endif
+	}
 
 	void Start()
 	{
@@ -32,22 +45,31 @@ public class InGameUI : MonoBehaviour
 		StageManager.Instance.OnWin += ShowWinScreen;
 
 		stageName.text = Localization.currentLanguageStrings[StageManager.Instance.stage.displayName];
+
+		#if UNITY_ANDROID || UNITY_IOS
+		StartMobileControls();
+		ShowMobileControls();
+		#endif
 	}
 
 	public void ShowPauseScreen()
 	{
 		pausePanel.gameObject.SetActive(true);
+		HideMobileControls();
 	}
 
 	public void HidePauseScreen()
 	{
 		settingsPanel.gameObject.SetActive(false);
 		pausePanel.gameObject.SetActive(false);
+
+		ShowMobileControls();
 	}
 
 	public void ShowLoseScreen()
 	{
 		losePanel.gameObject.SetActive(true);
+		HideMobileControls();
 	}
 
 	public void ShowWinScreen()
@@ -58,19 +80,41 @@ public class InGameUI : MonoBehaviour
 		hive3.color = hiveCount == 3 ? (Color32)Color.white : transparentBlack;
 
 		winPanel.gameObject.SetActive(true);
+		HideMobileControls();
 	}
 
-	// public void ShowMessagePanel(string message)
-	// {
-	// 	textCenterMessage.text = message;
+	private void StartMobileControls()
+	{
+		if(mobileControlsPrefab == null || SettingsManager.MobileControl == MobileControlMode.Tilt)
+			return;
 
-	// 	messagePanel.gameObject.SetActive(true);
-	// 	btnNextStage.gameObject.SetActive(false);
-	// 	btnResume.gameObject.SetActive(false);
-	// }
+		GameObject clone = Instantiate(mobileControlsPrefab);
+		clone.transform.SetParent(this.transform, false);
+		clone.SetActive(false);
 
-	// public void HideMessagePanel()
-	// {
-	// 	messagePanel.gameObject.SetActive(false);
-	// }
+		mobileControls = clone.GetComponent<UIMobileControls>();
+	}
+
+	private void ShowMobileControls()
+	{
+		if(mobileControls != null && SettingsManager.MobileControl != MobileControlMode.Tilt)
+			mobileControls.gameObject.SetActive(true);
+	}
+
+	private void HideMobileControls()
+	{
+		if(mobileControls != null)
+			mobileControls.gameObject.SetActive(false);
+	}
+
+	private void OnChangeMobileControl(MobileControlMode newMode)
+	{
+		if(newMode != MobileControlMode.Tilt)
+		{
+			if(mobileControls == null)
+				StartMobileControls();
+
+			mobileControls.SetControls(newMode);
+		}
+	}
 }
